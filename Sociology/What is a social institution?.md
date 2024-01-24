@@ -46,3 +46,6 @@
 ### Jane Addams
 - Addams founded hull house, where the ideas of the Chicago school were put into practice and tested.
 - Addams was a prolific author on both the substance and methodology of community studies and her work at hull house was influential in the development of Chicago school's theories, yet she was never afforded the same respect as the majority of her male contemporaries.
+### Functionalism
+- the theory that various social institutions and processes in society exist to serve some important function to keep society running
+- Talcott Parsons was a leading theorist of functionalism in the mid-20th century
