@@ -46,6 +46,14 @@
 ### Jane Addams
 - Addams founded hull house, where the ideas of the Chicago school were put into practice and tested.
 - Addams was a prolific author on both the substance and methodology of community studies and her work at hull house was influential in the development of Chicago school's theories, yet she was never afforded the same respect as the majority of her male contemporaries.
-### Functionalism
+## Functionalism
 - the theory that various social institutions and processes in society exist to serve some important function to keep society running
 - Talcott Parsons was a leading theorist of functionalism in the mid-20th century
+## Conflict Theory
+- the idea that conflict between competing interests is the basic animating force of social change and society in general
+- according to conflict theorists, inequality exists as a result of political struggles among different groups in a particular society
+- although functionalists theorize that inequality is necessary and beneficial aspect of society, conflict theorists argue that it is unfair and exist at the expense of less powerful groups
+## Symbolic Interactionism
+- a micro-level theory in which shared meanings, orientations, and assumptions form the basic motivations behind people's actions.
+- the  groundwork for symbolic interactionism was laid by Erving Goffman's dramaturgical theory of social interaction, which used the language of theater to describe the social facade we create
+- according to Goffman, we make judgments about class and social status based on details of how people present themselves to theirs.
