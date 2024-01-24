@@ -53,7 +53,7 @@
 - the idea that conflict between competing interests is the basic animating force of social change and society in general
 - according to conflict theorists, inequality exists as a result of political struggles among different groups in a particular society
 - although functionalists theorize that inequality is necessary and beneficial aspect of society, conflict theorists argue that it is unfair and exist at the expense of less powerful groups
-## Symbolic Interactionism
+## Symbolic Interactionism:
 - a micro-level theory in which shared meanings, orientations, and assumptions form the basic motivations behind people's actions.
 - the  groundwork for symbolic interactionism was laid by Erving Goffman's dramaturgical theory of social interaction, which used the language of theater to describe the social facade we create
 - according to Goffman, we make judgments about class and social status based on details of how people present themselves to theirs.
