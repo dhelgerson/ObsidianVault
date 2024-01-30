@@ -30,3 +30,45 @@
 
 ## order of operations:
 ## `PNCD`
+- parenthesis, not, conjunction disconjunction
+
+### conditional operation
+- denoted by an arrow
+- read as `if _ then _`
+
+| p | q | p -> q |
+| ---- | ---- | ---- |
+| t | t | t |
+| f | t | f |
+| t | f | t |
+| f | f | t |
+
+- it's weird
+
+| base | p -> q |
+| ---- | ---- |
+| converse | q -> p |
+| contrapositive | !q -> !p |
+| Inverse | !p -> !q |
+### Biconditional:
+- read `if and only if`
+
+| p | q | p <-> q |
+| ---- | ---- | ---- |
+| T | T | T |
+| T | F | F |
+| F | T | F |
+| F | F | T |
+## Tautology & Contradiction
+- tautology - a proposition that only results in true values
+- contradiction - proposition that d results in false values
+
+| p | !p | p v !p | p ^ !p |
+| ---- | ---- | ---- | ---- |
+| T | F | T | F |
+| F | T | T | F |
+## Logical equivalency:
+- propositions that have the same truth value regardless of the truth values of their individual propositions.
+- denoted as a triple equal sign
+### Propositional Logic Proof:
+- see slides on canvas for equivalency laws
