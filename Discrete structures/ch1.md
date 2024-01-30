@@ -76,6 +76,7 @@
 - mathematical statements generally contain variables
 	- x is an odd number
 ### Predicates:
+- **Anything w/ free variables is a predicate, anything w/out is a proposition**
 - any logical statement who's truth value is a function of one or more variables is knows as a predicate
 - $Q(x,y):x^2=y$
 - $Q(5,25)$ is true because $5^2 =25$
@@ -93,7 +94,7 @@
 	- $\forall x P(x)$ is true if an only if $P(n)$ is true for every n in the domain of x
 - **arbitrary element:**
 - $\forall x(\dfrac{1}{x+1} < 1)$
-	- the domain is all positiive integers: $0<x$
+	- the domain is all positive integers: $0<x$
 	Proof:
 		$0 < x$
 		$1 < x+1$
@@ -102,8 +103,21 @@
 - **Existential modifier:**
 	- $\exists x:P(x)$ is true if and only if $P(n)$ is true for at least one value of n in the domain
 	- $\exists x:(x + 1 < x)$
-- **Quantified Statements:** universlaly and existentially quantified statements can also be constructed from logial operations
+- **Quantified Statements:** universally and existentially quantified statements can also be constructed from logical operations
 	- domain of all positive integers
 		- $P(x):x$ is prime
 		- $O(x):x$ is odd
-	- 
+### logical equivalents:
+- English statements can be logically equivalent to logical statements
+	- "everyone was not sick" $\equiv \forall x:\neg P(x)$ 
+- **Demorgans law:**
+	- $\neg \forall x:P(x) \equiv \forall x: \neg P(x)$ 
+
+| proposition | truth |
+| ---- | ---- |
+| $\forall x \forall y:x*y=1$ | false |
+| $\exists x\exists y:(x*y=0)$ | true |
+| $\exists x \exists y:((x+y=x)\wedge(y\not=0))$ | false |
+| $\forall x\exists y:(x*y=1)$ | false |
+| $\exists x\forall y:(x*y=1)$ | false |
+| $\exists x\forall y:(x*y=y)$ | true |
