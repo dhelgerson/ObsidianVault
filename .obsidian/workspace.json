@@ -11,12 +11,8 @@
             "id": "fbdeb8f04fcf32a1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sociology/CH2 - How Sociologists perform research.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sociology/CH2 - How Sociologists perform research.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sociology/CH2 - How Sociologists perform research.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Sociology/CH2 - How Sociologists perform research.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,10 +140,14 @@
   },
   "active": "fbdeb8f04fcf32a1",
   "lastOpenFiles": [
-    "Sociology/CH1.md",
-    "Sociology/CH2 - How Sociologists perform research.md",
-    "Untitled.md",
+    "Sociology",
+    "Discrete structures/ch1.md",
+    "Discrete structures",
     "Data Sctructures/Data Struct.md",
-    "Discrete structures/ch1.md"
+    "Data Sctructures",
+    "Engineering statistics/Probability.md",
+    "DockerPPT.md",
+    "Sociology/What is a social institution?.md",
+    "Engineering statistics"
   ]
 }
