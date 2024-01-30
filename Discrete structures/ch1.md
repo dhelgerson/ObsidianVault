@@ -99,4 +99,11 @@
 		$1 < x+1$
 		$\dfrac{1}{x+1} < 1$
 - **Counterexample:** an element withing a domain for which a predicate is false
-- 
+- **Existential modifier:**
+	- $\exists x:P(x)$ is true if and only if $P(n)$ is true for at least one value of n in the domain
+	- $\exists x:(x + 1 < x)$
+- **Quantified Statements:** universlaly and existentially quantified statements can also be constructed from logial operations
+	- domain of all positive integers
+		- $P(x):x$ is prime
+		- $O(x):x$ is odd
+	- 
