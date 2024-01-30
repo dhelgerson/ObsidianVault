@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sociology/What is a social institution?.md",
+                "file": "Engineering statistics/Probability.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sociology/What is a social institution?.md",
+                "file": "Engineering statistics/Probability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sociology/What is a social institution?.md",
+                "file": "Engineering statistics/Probability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sociology/What is a social institution?.md"
+                "file": "Engineering statistics/Probability.md"
               }
             }
           }
@@ -147,5 +147,9 @@
     }
   },
   "active": "fbdeb8f04fcf32a1",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Sociology/What is a social institution?.md",
+    "Engineering statistics/Probability.md",
+    "Engineering statistics"
+  ]
 }
