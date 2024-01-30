@@ -63,7 +63,7 @@
 - tautology - a proposition that only results in true values
 - contradiction - proposition that d results in false values
 
-| p | !p | p v !p | p ^ !p |
+| p | !p | $p \vee \neg p$ | $p \vee \neg p$ |
 | ---- | ---- | ---- | ---- |
 | T | F | T | F |
 | F | T | T | F |
