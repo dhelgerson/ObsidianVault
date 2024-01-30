@@ -1,6 +1,6 @@
-### Propositions:
+## Propositions:
 - a statement that can be evaluated to true false
-	- ex:
+$Ex$:
 
 | proposition | is prop |
 | - | - |
@@ -11,71 +11,66 @@
 |24 divided by 12 is 6 | y |
 | did you do your homework? | n |
 ### Truth Values:
-- one plus one is 2
+- one plus one is two ($1 + 1 = 2$)
 ## Propositional variables:
 - variables that can be used to denote arbitrary propositions
-	- such as i or j when counting loops
+	- such as $i$ or $j$ when counting loops
 	**Ex:**	
- - p is true and q is false
+ - $p$ is $true$ and $q$ is $false$
 - **compound propositions**: evaluating propositional variables together
-- #### Compound propositions:
-	- **Conjunction:** or 'and'
-		- denoted by `^`
-	- **Disjunction:** or 'or'
-		- denoted by `v`
-	- **Exclusive Or**:
-		- denoted by a circle w/ a plus
-	- **Negation**: or 'not'
-		- denoted by a little carrot
+### Compound propositions:
+- **Conjunction:** or 'and'
+	- denoted by $\wedge$
+- **Disjunction:** or 'or'
+	- denoted by $\vee$
+- **Exclusive Or**:
+	- denoted by $\oplus$
+- **Negation**: or 'not'
+	- denoted by $\neg$ 
 
-## order of operations:
-## `PNCD`
+## Order of operations: `PNCD`
 - parenthesis, not, conjunction disconjunction
 
-### conditional operation
-- denoted by an arrow
+### Conditional operation
+- denoted by $\rightarrow$
 - read as `if _ then _`
 
-| p | q | p -> q |
+| $p$ | $q$ | $p\rightarrow q$ |
 | ---- | ---- | ---- |
-| t | t | t |
-| f | t | f |
-| t | f | t |
-| f | f | t |
+| $T$ | $T$ | $T$ |
+| $F$ | $T$ | $F$ |
+| $T$ | $F$ | $T$ |
+| $F$ | $F$ | $T$ |
 
 - it's weird
-
-| base | p -> q |
-| ---- | ---- |
-| converse | q -> p |
-| contrapositive | !q -> !p |
-| Inverse | !p -> !q |
+### Derivatives of $\rightarrow$
+| base | converse | contrapositive | inverse |
+| ---- | ---- | ---- | ---- |
+| $p\rightarrow q$ | $q\rightarrow p$ | $\neg q\rightarrow\neg p$ | $\neg p \rightarrow\neg q$ |
 ### Biconditional:
+- denoted by $\leftrightarrow$
 - read `if and only if`
 
-| p | q | p <-> q |
+| $p$ | $q$ | $p \leftrightarrow q$ |
 | ---- | ---- | ---- |
-| T | T | T |
-| T | F | F |
-| F | T | F |
-| F | F | T |
+|$T$|$T$|$T$|
+|$T$|$F$|$F$|
+|$F$|$T$|$F$|
+|$F$|$F$|$T$|
 ## Tautology & Contradiction
 - tautology - a proposition that only results in true values
 - contradiction - proposition that d results in false values
 
 | p | !p | $p \vee \neg p$ | $p \vee \neg p$ |
 | ---- | ---- | ---- | ---- |
-| T | F | T | F |
-| F | T | T | F |
+|$T$|$F$|$T$|$F$|
+|$F$|$T$|$T$|$F$|
 ## Logical equivalency:
 - propositions that have the same truth value regardless of the truth values of their individual propositions.
-- denoted as a triple equal sign
+- denoted by $\equiv$
 ### Propositional Logic Proof:
 - see slides on canvas for equivalency laws
-### Predicates and modifiers
-- mathematical statements generally contain variables
-	- x is an odd number
-### Predicates:
+## Predicates:
 - **Anything w/ free variables is a predicate, anything w/out is a proposition**
 - any logical statement who's truth value is a function of one or more variables is knows as a predicate
 - $Q(x,y):x^2=y$
@@ -107,7 +102,7 @@
 	- domain of all positive integers
 		- $P(x):x$ is prime
 		- $O(x):x$ is odd
-### logical equivalents:
+### Logical equivalents:
 - English statements can be logically equivalent to logical statements
 	- "everyone was not sick" $\equiv \forall x:\neg P(x)$ 
 - **Demorgans law:**
