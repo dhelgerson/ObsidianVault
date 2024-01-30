@@ -72,3 +72,31 @@
 - denoted as a triple equal sign
 ### Propositional Logic Proof:
 - see slides on canvas for equivalency laws
+### Predicates and modifiers
+- mathematical statements generally contain variables
+	- x is an odd number
+### Predicates:
+- any logical statement who's truth value is a function of one or more variables is knows as a predicate
+- $Q(x,y):x^2=y$
+- $Q(5,25)$ is true because $5^2 =25$
+### Domain
+- set of all possible values
+	- typically specified
+	- can drastically change the outcome of predicates
+- $P(x):x$ is a prime number
+	- $P(7)$ True?
+### Quantifiers
+- predicate has all unknown variables accounted for, it becomes a proposition
+- quantifiers let us do this
+- $\forall x P(x)$ reads "for all x, p of x" 
+	- $\forall$ is a universal modifier
+	- $\forall x P(x)$ is true if an only if $P(n)$ is true for every n in the domain of x
+- **arbitrary element:**
+- $\forall x(\dfrac{1}{x+1} < 1)$
+	- the domain is all positiive integers: $0<x$
+	Proof:
+		$0 < x$
+		$1 < x+1$
+		$\dfrac{1}{x+1} < 1$
+- **Counterexample:** an element withing a domain for which a predicate is false
+- 
