@@ -11,12 +11,17 @@
             "id": "fbdeb8f04fcf32a1",
             "type": "leaf",
             "state": {
+<<<<<<< Updated upstream
               "type": "markdown",
               "state": {
                 "file": "Engineering statistics/Probability.md",
                 "mode": "source",
                 "source": false
               }
+=======
+              "type": "empty",
+              "state": {}
+>>>>>>> Stashed changes
             }
           }
         ]
@@ -85,7 +90,10 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Engineering statistics/Probability.md",
+=======
+>>>>>>> Stashed changes
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,10 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Engineering statistics/Probability.md",
+=======
+>>>>>>> Stashed changes
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +135,13 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+<<<<<<< Updated upstream
               "state": {
                 "file": "Engineering statistics/Probability.md"
               }
+=======
+              "state": {}
+>>>>>>> Stashed changes
             }
           }
         ]
@@ -146,10 +161,15 @@
       "command-palette:Open command palette": false
     }
   },
+<<<<<<< Updated upstream
   "active": "fbdeb8f04fcf32a1",
   "lastOpenFiles": [
     "Sociology/What is a social institution?.md",
     "Engineering statistics/Probability.md",
     "Engineering statistics"
   ]
+=======
+  "active": "2fcec11c4c633828",
+  "lastOpenFiles": []
+>>>>>>> Stashed changes
 }
