@@ -33,4 +33,4 @@ $Ex:$
 ## Bayes' theorem
 ## discrete random variable
 ## probability mass function
-## cumulative distribution functions
+## cumulative distribution functions 
