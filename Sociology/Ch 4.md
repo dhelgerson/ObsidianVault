@@ -16,4 +16,4 @@
 - schools teach basic behavioral norms; when students resist those norms, many authorities turn to medication
 - schools perpetuate social class advantages
 	- private prep schools indoctrinate the students who attend them into a world of social status and privilege
-- 
+-  
