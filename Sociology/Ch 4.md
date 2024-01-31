@@ -1,6 +1,6 @@
 # Socialization
-	the process in which individuals internalize the values, beliefs, and norms of a given society and learn to function as a member of that societ
-	Ex: the way young children are taugh in school to raise their hand when they want to speak
+the process in which individuals internalize the values, beliefs, and norms of a given society and learn to function as a member of that societ
+- Ex: the way young children are taught in school to raise their hand when they want to speak
 ## Limits of Socialization:
 - socialization cannot explain everything about a person's development or personality
 - biology is also very important in such
@@ -16,4 +16,6 @@
 - schools teach basic behavioral norms; when students resist those norms, many authorities turn to medication
 - schools perpetuate social class advantages
 	- private prep schools indoctrinate the students who attend them into a world of social status and privilege
--  
+### Peers:
+- particularly strong agents in adolescence due to the amount of time spent with each other
+- peer groups usually expect some sort of conformity from their members: peer pressure
