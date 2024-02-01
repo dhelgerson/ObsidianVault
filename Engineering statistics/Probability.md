@@ -48,13 +48,13 @@ $V(x)=E(x^2)-\mu^2$
 - simplest discrete random variable
 - finite number of possible values, each w/ equal probability
 $f(x_i)=\dfrac{1}{n}$ 
-$Ex$: you roll a die
+$Ex$: you roll a die:
 	$f(x_i)=\dfrac{result}{sides}=\dfrac{1}{6}$ 
-$Ex$: integers from a to b
+$Ex$: all integers from a to b:
 	$f(x_i)=\dfrac{1}{b-a+1}$ 
 	
-	$\mu=\sum_{k=a}^b(\dfrac{k}{b-a+1})$ 
-remember:
-	$S=a+(a+1)
+	$\mu=\sum_{k=a}^b(\dfrac{k}{b-a+1})=\dfrac{a+b}{2}$
+	
+	$\sigma^2=\dfrac{(b-a+1)^2-1}{12}$ 
 ## probability mass function
 ## cumulative distribution functions 
