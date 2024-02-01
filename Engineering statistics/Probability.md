@@ -44,5 +44,17 @@ $\sigma^2=V(x)=\sum_{i=1}^n(x_i-\mu)^2=0.36$
 	both are taken from empirical values I didn't write down
 Alternative formula for variance:
 $V(x)=E(x^2)-\mu^2$ 
+### Discrete uniform distribution:
+- simplest discrete random variable
+- finite number of possible values, each w/ equal probability
+$f(x_i)=\dfrac{1}{n}$ 
+$Ex$: you roll a die
+	$f(x_i)=\dfrac{result}{sides}=\dfrac{1}{6}$ 
+$Ex$: integers from a to b
+	$f(x_i)=\dfrac{1}{b-a+1}$ 
+	
+	$\mu=\sum_{k=a}^b(\dfrac{k}{b-a+1})$ 
+remember:
+	$S=a+(a+1)
 ## probability mass function
 ## cumulative distribution functions 
