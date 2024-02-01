@@ -1,5 +1,5 @@
 # Socialization
-the process in which individuals internalize the values, beliefs, and norms of a given society and learn to function as a member of that societ
+the process in which individuals internalize the values, beliefs, and norms of a given society and learn to function as a member of that society
 - Ex: the way young children are taught in school to raise their hand when they want to speak
 ## Limits of Socialization:
 - socialization cannot explain everything about a person's development or personality
