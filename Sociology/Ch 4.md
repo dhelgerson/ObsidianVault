@@ -26,3 +26,15 @@ the process in which individuals internalize the values, beliefs, and norms of a
 - developed a theory about how the social self develops over the course of childhood
 - infants only know the $I$, but through interaction, they learn about $me$ and $other$
 - children develop a concept of the $generalized\ other$, which allows them to apply norms and behaviors learned in specific situations to new situations.
+- stressed the importance of imitation, play, and games in helping children recognize one another, distinguish between self and other, and grasp the idea that other people can have multiple roles
+### Social class and family
+- parents of different social classes socialize their children differently
+- middle-class parents are more likely to value independence and self-direction in their children, whereas working-class parents prioritize obedience to external authority for their children
+- sociologist Annette Lareau conducted an ethnography to study how parents transmit these values to their children
+### Annette Lareau
+- explains that parenting strategies very by social class, and points out that it is unclear whether these differences affect the long-term outcomes of children
+- middle-class parents are more likely to engage in "concerted cultivation"
+	- structure children's leisure time w/ formal activities and reason w/ them over decisions in an effort to foster kids' talents
+- working class and poor parents are more likely to engage in the "accomplishment of natural growth"
+	- give children the room and resources to develop but leave it up to the kids to decide how they want to structure their free time
+- 
