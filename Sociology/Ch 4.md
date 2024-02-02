@@ -37,4 +37,11 @@ the process in which individuals internalize the values, beliefs, and norms of a
 	- structure children's leisure time w/ formal activities and reason w/ them over decisions in an effort to foster kids' talents
 - working class and poor parents are more likely to engage in the "accomplishment of natural growth"
 	- give children the room and resources to develop but leave it up to the kids to decide how they want to structure their free time
-- 
+### Merton & his Role theory
+- status is a position in socioty that comes with a set of expectations
+- roles are the behaviors expected from a particular status
+- role conflict occurs when the roles associated with one status clash with the roles associated with a dfferent status
+- role strain occurs when roles associated with a single status clash
+### Gender Roles
+- sets of behavioral norms assumed to accompany one's status as masculine, feminine, ~~~or other~~
+- gender theorists argue that gender roles can be more powerful and influential than other roles
