@@ -19,3 +19,10 @@ the process in which individuals internalize the values, beliefs, and norms of a
 ### Peers:
 - particularly strong agents in adolescence due to the amount of time spent with each other
 - peer groups usually expect some sort of conformity from their members: peer pressure
+## Theories of Socialization:
+### Charles Horton Cooley
+- theorized that "self" emerges from our ability to assume the point of view of others and imagine how those others see us
+### George Herbert Mead
+- developed a theory about how the social self develops over the course of childhood
+- infants only know the $I$, but through interaction, they learn about $me$ and $other$
+- children develop a concept of the $generalized\ other$, which allows them to apply norms and behaviors learned in specific situations to new situations.
