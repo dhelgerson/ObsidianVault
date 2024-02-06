@@ -24,18 +24,44 @@ class Node{
 class Stack{
     // here's where we do the real work, we dynamically allocate nodes and keep track of them w/ pointers
     private:
-        Node *head = nullptr;
+        Node *top = nullptr;
     public:
         Stack(){}
+        ~Stack(){}
         void push (){}
         void push(int payload){}
         int pop(){}
+        int peak(){}
 };
+
+Stack::Stack(){
+    // here we need to initialize our top and any other housekeeping
+}
+Stack::~Stack(){
+    Node *tmp = nullptr;
+    while (top != nullptr){
+        tmp = top;
+        top = top->next;
+        delete tmp;
+    }
+}
+
+int Stack::pop(){
+    // here we need to:
+    Node *tmp = top; // keep track of the current top
+    int data = tmp->payload; // store the payload for returning
+    top = tmp->next; // assign the next node as the top, getting ready for the current one to be removed
+    delete tmp; // remove the current top, preventing memory leak
+    return data; // return the data
+}
+
+int Stack::peak(){
+    return top->payload;
+}
 
 int main(){
 
-    
-    
+        
 
     return 0;
 }
