@@ -55,6 +55,9 @@ $Ex$: all integers from a to b:
 	
 	$\mu=\sum_{k=a}^b(\dfrac{k}{b-a+1})=\dfrac{a+b}{2}$
 	
-	$\sigma^2=\dfrac{(b-a+1)^2-1}{12}$ 
+	$\sigma^2=\dfrac{(b-a+1)^2-1}{12}$
+$Ex$: binomial distribution
+	$f(x)=(^n_x)p^x(1-p)^{n-x}x=0,1,...,n$ 
+example -> the chance that a bit transmitted is in error is 0.1. also, as
 ## probability mass function
 ## cumulative distribution functions 
