@@ -69,5 +69,9 @@ $P(EEOO)=.1*.1*(1-.1)*(1-.1)$
 $P(EEOO)=.1^2*.9^2$
 $P(EEOO)=0.0081$ 
 this is true for all $P(X=2)$ 
+$Ex$: Poisson Distribution
+	$Po(\lambda)$ 
+	poisson charts how likely an event will happen in a standard time interval
+	$P(Y)=\dfrac{\lambda^ye^{-\lambda}}{y!}$  
 ## probability mass function
 ## cumulative distribution functions 
