@@ -24,3 +24,9 @@
 - language is an important part of culture
 - according to the sapir-whorf hypothesis in linguistics, the language we speak directly influences the way we thing about and experience the world
 - concepts such as race, gender, class, and inequality are part of our culture as well
+### Studying Culture
+- **Cultureal relativism:** taking into account th edifferences across cultures w/out passing judgements
+- interpreting cultural relativism can be difficult when local traditions conflict w/ universally recognized human rights
+- **Cultural scripts:** modes of behavior and understanding that are not universal or natural
+- margaret mead intoduced the idea that cultural scripts shape our notiong of gender.
+- 
