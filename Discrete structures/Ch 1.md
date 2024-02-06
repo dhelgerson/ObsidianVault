@@ -69,6 +69,19 @@ $Ex$:
 - propositions that have the same truth value regardless of the truth values of their individual propositions.
 - denoted by $\equiv$
 ### Propositional Logic Proof:
+
+| Idempotent laws: | $p\vee  p ≡ p$ | $p\wedge  p ≡ p$ |
+| ---- | ---- | ---- |
+| Commutative laws: | $p\vee q ≡ q\vee p$ | $p\wedge q ≡ q\wedge p$ |
+| Distributive laws: | $p\vee (q\wedge r) ≡ (p\vee q)\wedge (p\vee r)$ | $p\wedge (q\vee r) ≡ (p\wedge q)\vee (p\wedge r)$ |
+| Identity laws: | $p\vee F ≡ p$ | $p\wedge T ≡ p$ |
+| Domination laws: | $p\wedge F ≡ F$ | $p\vee T ≡ T$ |
+| Double negation law: | $¬¬p ≡ p$ |  |
+| Complement laws: | $p\wedge ¬p ≡ F$ | $¬T ≡ F$ |
+|  | $p\vee ¬p ≡ T$ | $¬F ≡ T$ |
+| De Morgan's laws: | $¬(p\vee q) ≡ ¬p\wedge ¬q$ | $¬(p\wedge q) ≡ ¬p\vee ¬q$ |
+| Absorption laws: | $p\vee (p\wedge q) ≡ p$ | $p\wedge (p\vee q) ≡ p$ |
+| Conditional identities: | $p → q ≡ ¬p\vee q$ | $p ↔ q ≡ (p → q)\wedge (p → q)$ |
 - see slides on canvas for equivalency laws
 ## Predicates:
 - **Anything w/ free variables is a predicate, anything w/out is a proposition**

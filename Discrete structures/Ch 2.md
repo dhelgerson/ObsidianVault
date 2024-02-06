@@ -9,3 +9,5 @@ How would you express even or odd?
 ## proving
 $$\exists x:x^2<0\equiv
 \forall x:\neg(x^2<-0)$\equiv\forall x:(x^2\geq0)$$
+## $Ex$:
+	
