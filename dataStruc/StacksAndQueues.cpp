@@ -37,6 +37,7 @@ class Stack{
 Stack::Stack(){
     // here we need to initialize our top and any other housekeeping
 }
+
 Stack::~Stack(){
     Node *tmp = nullptr;
     while (top != nullptr){
@@ -44,6 +45,7 @@ Stack::~Stack(){
         top = top->next;
         delete tmp;
     }
+    // this would better be a recursive function
 }
 
 int Stack::pop(){
