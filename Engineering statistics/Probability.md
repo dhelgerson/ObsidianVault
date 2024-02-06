@@ -58,6 +58,8 @@ $Ex$: all integers from a to b:
 	$\sigma^2=\dfrac{(b-a+1)^2-1}{12}$
 $Ex$: binomial distribution
 	$f(x)=(^n_x)p^x(1-p)^{n-x}x=0,1,...,n$ 
+	$\mu=E(X)=np$
+	$\sigma^2=V(X)=np(1-p)$ 
 $Example$ -> the chance that a bit transmitted is in error is 0.1. also, assume that the transmission trials are independent.
 $X =$ the number of bits in error in the next 4 bits.
 Determine $P(X=2)$
