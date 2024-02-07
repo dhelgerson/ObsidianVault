@@ -38,3 +38,19 @@ any formats, platforms, or vehicles that carry, present, or communicate informat
 - Hegemony: a condition where a dominant group uses its power to elicit the voluntary "consent" from the masses
 - hegemony stands in contrast to domination, or getting people to do what you want through the use of force
 - the concept of hegemony is important for understanding the impact of the media. 
+### Media studies:
+open paths of investigation, including:
+- how people create media
+- how the media shape the culture we live
+- how the media reflect the culture they exist
+- how individuals and groups use the media as their own means to change culture.
+#### Racism in media
+- the media can create, reinforce, and perpetuate racist ideologies and stereotypes
+- these acts of racism and stereotyping can be intentional or unintentional
+- in Katrina, black survivors were depicted differently doing the same thing (looting vs finding)
+#### Sexism in media
+- two frequent critiques of the media centers of the representation of women
+	- glamorizing and perpetuating unrealistic ideals of feminine beauty
+	- publish images of violence against women
+- some advertisers are responding to these criticisms with new approaches
+- 
