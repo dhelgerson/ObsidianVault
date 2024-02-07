@@ -29,4 +29,12 @@
 - interpreting cultural relativism can be difficult when local traditions conflict w/ universally recognized human rights
 - **Cultural scripts:** modes of behavior and understanding that are not universal or natural
 - margaret mead intoduced the idea that cultural scripts shape our notiong of gender.
-- 
+## Media:
+any formats, platforms, or vehicles that carry, present, or communicate information
+- discussions about media are generally about mass media
+	- the invention of the printing press and movable type int he 15th
+	- the creation of moving pictures at the turn of the 20th century
+	- the adoption of the scrolling ticker by today's 24hr news
+- Hegemony: a condition where a dominant group uses its power to elicit the voluntary "consent" from the masses
+- hegemony stands in contrast to domination, or getting people to do what you want through the use of force
+- the concept of hegemony is important for understanding the impact of the media. 
