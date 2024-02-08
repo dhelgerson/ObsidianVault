@@ -18,4 +18,4 @@ proof:
 	then $6k+3+7=6k+10$
 	$3(2k)+10$
 	$even+even=even$
-	
+$\exists x\forall y\ (x*y=x)$ 
