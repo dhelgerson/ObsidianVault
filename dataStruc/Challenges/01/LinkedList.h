@@ -15,6 +15,9 @@ class LinkedList{
         void append(int payload);
         void remove(int match);
         void display(std::ostream &output);
+        bool search(int key);
+        void tailDisplay(std::ostream &output);
+        void tailRemove(int match);
 };
 
 LinkedList::~LinkedList(){
@@ -51,14 +54,32 @@ void LinkedList::display(std::ostream &output){
     }
     output << std::endl;
 }
-void LinkedList::remove(int key){
+bool LinkedList::search(int key){
     Node *tmp = head;
     while (tmp){
-        if (tmp->next->payload == key){
-            break;
+        if (tmp->payload == key){
+            return true;
+        }
+        else{
+            tmp = tmp->next;
         }
     }
-    Node *del = tmp->next;
-    tmp->next = del->next;
-    delete del;
+    return false;
+}
+void LinkedList::remove(int key){
+    Node *tmp = head;
+    Node *prev;
+    while (tmp){
+        if (tmp->payload == key){
+            break;
+        }
+        else {
+            prev = tmp;
+            tmp = tmp->next;
+        }
+    }
+    if (tmp){
+        prev->next = tmp->next;
+        delete tmp;
+    }
 }
