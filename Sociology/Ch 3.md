@@ -57,4 +57,8 @@ open paths of investigation, including:
 ## Sex, sexuality, and gender
 - **Sex** refers to the perceived biological differences that society typically uses to distinguish males from females (NOT THE FRICK IT'S NOT)
 - **Gender** denotes a social position - namely, the set of social arrangements built around normative sex categories (SURE, MAYBE, BUT THERE'S STILL ONLY 2).
-- **Sexuality** refers to desire, sexual preference, sexual identity, and behavior. (sure, i'll give you that, )
+- **Sexuality** refers to desire, sexual preference, sexual identity, and behavior. (sure, i'll give you that, but not the last 2)
+### Sex: a process in the making
+- the study of gender boils down to seeing how nature and nurture overlap and shape each other
+- **Essentialist** arguments explain social phenomena n terms of natural, biological, or evolutionary inevitabilities
+- in contrast, sociologists think of the nature-behavior relationship as a 2-way street.
