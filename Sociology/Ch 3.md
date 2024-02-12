@@ -53,4 +53,8 @@ open paths of investigation, including:
 	- glamorizing and perpetuating unrealistic ideals of feminine beauty
 	- publish images of violence against women
 - some advertisers are responding to these criticisms with new approaches
-- 
+
+## Sex, sexuality, and gender
+- **Sex** refers to the perceived biological differences that society typically uses to distinguish males from females (NOT THE FRICK IT'S NOT)
+- **Gender** denotes a social position - namely, the set of social arrangements built around normative sex categories (SURE, MAYBE, BUT THERE'S STILL ONLY 2).
+- **Sexuality** refers to desire, sexual preference, sexual identity, and behavior. (sure, i'll give you that, )
