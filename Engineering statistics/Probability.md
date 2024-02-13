@@ -74,5 +74,8 @@ $Ex$: Poisson Distribution
 	Poisson charts how likely an event will happen in a standard time interval
 	$P(Y)=\dfrac{\lambda^ye^{-\lambda}}{y!}$  
 	$(^n_x)(\dfrac{\lambda T}{n})\rightarrow\dfrac{(\lambda T)^x}{x!}(1-\dfrac{\lambda T}{n})^{-x}\rightarrow1(1-\dfrac{\lambda T}{n})^n\rightarrow e^{-\lambda T}$ 
+$Ex$: Cumulative Distribution
+	$F(x)=P(X\leq x)=\int\limits_{-\infty}^xf(u)du\ for\ -\infty<x<\infty$ 
+	- remember you can always break up integrals by summing different segments of the domain
 ## probability mass function
 ## cumulative distribution functions 
