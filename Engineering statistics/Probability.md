@@ -31,19 +31,18 @@
 $Ex:$
 	there's a chance that a bit transmitted through a digital transmission channel is received in error. let $X$ equal the number of bits in the error that the next four bits transmitted. the possible values for $X$ are ${0,1,2,3,4}$. suppose that the probabilities are
 ## Bayes' theorem
-## discrete random variable
+## Discrete random variable
 mean value/expected value
-$\mu = E(x)=\sum\limits_{i=1}^{n} x: f(\mu_i)$ 
+	$\mu = E(x)=\sum\limits_{i=1}^{n} x: f(\mu_i)$ 
 variance
-$\sigma^2=V(x)=E(x-\mu)^2=\sum\limits_{i=1}^n(x_i-\mu)^2+x_i=E(x^2)-\,u^2$ 
-$Ex:$
-let x be the change be the number of incorrect bits in the next 4
+	$\sigma^2=V(x)=E(x-\mu)^2=\sum\limits_{i=1}^n(x_i-\mu)^2+x_i=E(x^2)-\,u^2$ 
+$Ex$: let x be the change be the number of incorrect bits in the next 4
 suppose:
-$\mu = E(X)=0f(0)+1f(1)+2f(2)+3f(3)+4f(4)=.4$ 
-$\sigma^2=V(x)=\sum\limits_{i=1}^n(x_i-\mu)^2=0.36$ 
+	$\mu = E(X)=0f(0)+1f(1)+2f(2)+3f(3)+4f(4)=.4$ 
+	$\sigma^2=V(x)=\sum\limits_{i=1}^n(x_i-\mu)^2=0.36$ 
 	both are taken from empirical values I didn't write down
 Alternative formula for variance:
-$V(x)=E(x^2)-\mu^2$ 
+	$V(x)=E(x^2)-\mu^2$ 
 ### Discrete uniform distribution:
 - simplest discrete random variable
 - finite number of possible values, each w/ equal probability
@@ -61,14 +60,14 @@ $Ex$: binomial distribution
 	$\mu=E(X)=np$
 	$\sigma^2=V(X)=np(1-p)$ 
 $Example$ -> the chance that a bit transmitted is in error is 0.1. also, assume that the transmission trials are independent.
-$X =$ the number of bits in error in the next 4 bits.
-Determine $P(X=2)$
-$E=error, O=okay$
-6 outcomes where $X=2$: $\{EEOO,EOEO,EOOE,OEOE,OEEO,OOEE\}$ 
-$P(EEOO)=.1*.1*(1-.1)*(1-.1)$
-$P(EEOO)=.1^2*.9^2$
-$P(EEOO)=0.0081$ 
-this is true for all $P(X=2)$ 
+	$X =$ the number of bits in error in the next 4 bits.
+	Determine $P(X=2)$
+	$E=error, O=okay$
+	6 outcomes where $X=2$: $\{EEOO,EOEO,EOOE,OEOE,OEEO,OOEE\}$ 
+	$P(EEOO)=.1*.1*(1-.1)*(1-.1)$
+	$P(EEOO)=.1^2*.9^2$
+	$P(EEOO)=0.0081$ 
+	this is true for all $P(X=2)$ 
 $Ex$: Poisson Distribution
 	$Po(\lambda)$ 
 	Poisson charts how likely an event will happen in a standard time interval
@@ -77,7 +76,9 @@ $Ex$: Poisson Distribution
 $Ex$: Cumulative Distribution
 	$F(x)=P(X\leq x)=\int\limits_{-\infty}^xf(u)du\ for\ -\infty<x<\infty$ 
 	- remember you can always break up integrals by summing different segments of the domain
+	$\mu=E(X)=\int\limits_{-\infty}^{\infty}xf(x)dx$ 
+	$\sigma^2=V(X)=\int\limits_{-\infty}^{\infty}(x-\mu)^2f(x)dx=\int\limits_{-\infty}^{\infty}x^2f(x)dx-\mu^2$ 
 $P(x<4.95)=F(4.95)=5*4.95-24.5$ 
-probability at any point in a CDF is 0 since $\int\limits_a^b(u)du$ where $b=a$ is just $\int\limits^a_a(u)du=u(a-a)=0$ 
+	probability at any point in a CDF is 0 since $\int\limits_a^b(u)du$ where $b=a$ is just $\int\limits^a_a(u)du=u(a-a)=0$ 
 ## probability mass function
 ## cumulative distribution functions 
