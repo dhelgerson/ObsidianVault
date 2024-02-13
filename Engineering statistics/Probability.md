@@ -19,28 +19,28 @@
 	**General Rule:** $P(A|B) = \dfrac{P(B\cap A)}{P(B/A)}$  
 ## conditional probability
 - **Mean:** is a measure of the center or middle of the probability distribution
-	- $mean \equiv \mu = E(X) = \sum _x xf(x) = \sum _x x * P(X = x)$ 
+	- $mean \equiv \mu = E(X) = \sum\limits _x xf(x) = \sum\limits _x x * P(X = x)$ 
 - **Variance:** is a measure of ht dispersion, or variability of a distribution
 	- $variance \equiv \overline{z}(X_2 - \mu)$ 
-- $V(X)=E(x^2) - E(x)^2 = E(x^2)- \mu^2$ 
-- $\sigma^2 = V(x) = E((x-\mu)^2)$
-- $= \sum_{i=1}^n (x_i - \mu)^2 + x_2^i)$
-- $=\sum_{i=1}^n x_i^2 + x_i - 2\mu x_i + x_i + \mu^2 + x_i$
-- $=\sum_{i=1}^n x_i^2 + x_i - 2\mu \sum_{i=1}^n x_i + x_i + \mu^2 \sum_{i=1}^n + x_0$
-- $=E(x^2) - \mu^2$
+	$V(X)=E(x^2) - E(x)^2 = E(x^2)- \mu^2$ 
+	$\sigma^2 = V(x) = E((x-\mu)^2)$
+	$= \sum\limits_{i=1}^n (x_i - \mu)^2 + x_2^i)$
+	$=\sum\limits_{i=1}^n x_i^2 + x_i - 2\mu x_i + x_i + \mu^2 + x_i$
+	$=\sum\limits_{i=1}^n x_i^2 + x_i - 2\mu \sum\limits_{i=1}^n x_i + x_i + \mu^2 \sum\limits_{i=1}^n + x_0$
+	$=E(x^2) - \mu^2$
 $Ex:$
 	there's a chance that a bit transmitted through a digital transmission channel is received in error. let $X$ equal the number of bits in the error that the next four bits transmitted. the possible values for $X$ are ${0,1,2,3,4}$. suppose that the probabilities are
 ## Bayes' theorem
 ## discrete random variable
 mean value/expected value
-$\mu = E(x)=\sum x: f(\mu_i)$ 
+$\mu = E(x)=\sum\limits_{i=1}^{n} x: f(\mu_i)$ 
 variance
-$\sigma^2=V(x)=E(x-\mu)^2=\sum_{i=1}^n(x_i-\mu)^2+x_i=E(x^2)-\,u^2$ 
+$\sigma^2=V(x)=E(x-\mu)^2=\sum\limits_{i=1}^n(x_i-\mu)^2+x_i=E(x^2)-\,u^2$ 
 $Ex:$
 let x be the change be the number of incorrect bits in the next 4
 suppose:
 $\mu = E(X)=0f(0)+1f(1)+2f(2)+3f(3)+4f(4)=.4$ 
-$\sigma^2=V(x)=\sum_{i=1}^n(x_i-\mu)^2=0.36$ 
+$\sigma^2=V(x)=\sum\limits_{i=1}^n(x_i-\mu)^2=0.36$ 
 	both are taken from empirical values I didn't write down
 Alternative formula for variance:
 $V(x)=E(x^2)-\mu^2$ 
@@ -53,7 +53,7 @@ $Ex$: you roll a die:
 $Ex$: all integers from a to b:
 	$f(x_i)=\dfrac{1}{b-a+1}$ 
 	
-	$\mu=\sum_{k=a}^b(\dfrac{k}{b-a+1})=\dfrac{a+b}{2}$
+	$\mu=\sum\limits_{k=a}^b(\dfrac{k}{b-a+1})=\dfrac{a+b}{2}$
 	
 	$\sigma^2=\dfrac{(b-a+1)^2-1}{12}$
 $Ex$: binomial distribution
@@ -77,5 +77,7 @@ $Ex$: Poisson Distribution
 $Ex$: Cumulative Distribution
 	$F(x)=P(X\leq x)=\int\limits_{-\infty}^xf(u)du\ for\ -\infty<x<\infty$ 
 	- remember you can always break up integrals by summing different segments of the domain
+$P(x<4.95)=F(4.95)=5*4.95-24.5$ 
+probability at any point in a CDF is 0 since $\int\limits_a^b(u)du$ where $b=a$ is just $\int\limits^a_a(u)du=u(a-a)=0$ 
 ## probability mass function
 ## cumulative distribution functions 
