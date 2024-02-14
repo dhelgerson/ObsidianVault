@@ -62,3 +62,20 @@ open paths of investigation, including:
 - the study of gender boils down to seeing how nature and nurture overlap and shape each other
 - **Essentialist** arguments explain social phenomena n terms of natural, biological, or evolutionary inevitabilities
 - in contrast, sociologists think of the nature-behavior relationship as a 2-way street.
+### Theories of gender inequality
+- **Feminism** is a social movement to get people to understand that gender is an organizing principle in society and to address gender-based inequalities.
+- **2nd wave feminism**: at the start of the 2nd wave of the feminist movement in the 60's, theorists scrambled to find an answer to the 'woman question':
+	- what explains the nearly universal dominance of men
+	- what is the root of patriarchy?
+### parson's sex role theory
+- according to **sex role theory**, men and women perform their sex roles as breadwinners and wives/mothers because the nuclear family is the ideal arrangement in modern societies for fulfilling the function of reproducing workers.
+- this **structural functionalist** approach to gender:
+	- assumes gender differences exist to fulfill necessary societal functions
+	- does not allow for the possibility that other structures could fulfill the same function or that structures change throughout history
+### Rubin's sex/gender system
+- challenged assumption that because women's subordination occurred everywhere, it must be fulfilling some societal function
+	- Rubin argues that women are treated like valuable property whose trade patterns strengthen relations between families headed by men
+	- this sex/gender system is
+### Conflict theories
+- conflict theories focus on power and argue that patriarchal capitalists benefit through systems that subordinate women
+- socialist feminists, also known as radical feminists, argue that the root of all social relations, including relations of production, stemmed from unequal gender relations.
