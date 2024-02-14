@@ -79,3 +79,6 @@ open paths of investigation, including:
 ### Conflict theories
 - conflict theories focus on power and argue that patriarchal capitalists benefit through systems that subordinate women
 - socialist feminists, also known as radical feminists, argue that the root of all social relations, including relations of production, stemmed from unequal gender relations.
+### Intersectionality (the biggest load of bs in practice)
+- black feminism points out the importance of intersectionality, the idea that it is critical to understand the interplay between social identities such as race, class, gender, ability status, and sexual orientation, even though many social systems and institutions try to treat each category on its own
+- intersectionality establishes that 'woman' is not a stable or obvious category of identity (oh yes it is)
