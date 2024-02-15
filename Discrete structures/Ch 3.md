@@ -17,3 +17,17 @@ $C= \{x\in \mathbb{Z}:0<x<100\}$
 ### Subsets:
 $\emptyset \subseteq A\subseteq B$ 
 	every element of a is in b
+### Power set:
+a set of every possible subset, including itself
+	$A=\{1,2\}$
+	$P(A)=\{\emptyset,\{1\},\{2\},\{1,2\}=A\}$ 
+### Operations:
+**Intersection**: 
+	$A\cap B$ set of all common elements
+**Union**:
+	$A\cup B$ set made up of all elements from both
+
+| $A$ | $B$ | $A\cup B$ | $A\cap B$ |
+| ---- | ---- | ---- | ---- |
+| {1,2} | {1,3} | {1,2,3} | {1} |
+|  |  |  |  |
