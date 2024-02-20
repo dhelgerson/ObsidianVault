@@ -55,10 +55,10 @@ $Ex$: all integers from a to b:
 	$\mu=\sum\limits_{k=a}^b(\dfrac{k}{b-a+1})=\dfrac{a+b}{2}$
 	
 	$\sigma^2=\dfrac{(b-a+1)^2-1}{12}$
-$Ex$: binomial distribution
-	$f(x)=(^n_x)p^x(1-p)^{n-x}x=0,1,...,n$ 
-	$\mu=E(X)=np$
-	$\sigma^2=V(X)=np(1-p)$ 
+#### $Ex$: binomial distribution
+$f(x)=(^n_x)p^x(1-p)^{n-x}x=0,1,...,n$ 
+$\mu=E(X)=np$
+$\sigma^2=V(X)=np(1-p)$ 
 $Example$ -> the chance that a bit transmitted is in error is 0.1. also, assume that the transmission trials are independent.
 	$X =$ the number of bits in error in the next 4 bits.
 	Determine $P(X=2)$
@@ -68,27 +68,27 @@ $Example$ -> the chance that a bit transmitted is in error is 0.1. also, assume 
 	$P(EEOO)=.1^2*.9^2$
 	$P(EEOO)=0.0081$ 
 	this is true for all $P(X=2)$ 
-$Ex$: Poisson Distribution
+#### $Ex$: Poisson Distribution
 	$Po(\lambda)$ 
-	Poisson charts how likely an event will happen in a standard time interval
+Poisson charts how likely an event will happen in a standard time interval
 	$P(Y)=\dfrac{\lambda^ye^{-\lambda}}{y!}$  
 	$(^n_x)(\dfrac{\lambda T}{n})\rightarrow\dfrac{(\lambda T)^x}{x!}(1-\dfrac{\lambda T}{n})^{-x}\rightarrow1(1-\dfrac{\lambda T}{n})^n\rightarrow e^{-\lambda T}$ 
-$Ex$: Cumulative Distribution
+#### $Ex$: Cumulative Distribution
 	$F(x)=P(X\leq x)=\int\limits_{-\infty}^xf(u)du\ for\ -\infty<x<\infty$ 
-	- remember you can always break up integrals by summing different segments of the domain
+- remember you can always break up integrals by summing different segments of the domain
 	$\mu=E(X)=\int\limits_{-\infty}^{\infty}xf(x)dx$ 
 	$\sigma^2=V(X)=\int\limits_{-\infty}^{\infty}(x-\mu)^2f(x)dx=\int\limits_{-\infty}^{\infty}x^2f(x)dx-\mu^2$ 
-$P(x<4.95)=F(4.95)=5*4.95-24.5$ 
-	probability at any point in a CDF is 0 since $\int\limits_a^b(u)du$ where $b=a$ is just $\int\limits^a_a(u)du=u(a-a)=0$ 
-Normal Distribution (Gaussian Distribution):
-	$f(x)=\dfrac{1}{\sqrt{2\pi}\sigma}e^{\dfrac{-(x-\mu)^2}{e\sigma^2}}$ $-\infty< x< \infty$ 
-	$Ex$: if $\mu =10$, $\sigma^2=4$,  $P(X>13)=\int\limits_{13}^\infty (\dfrac{1}{\sqrt{2\pi}\sigma}e^{\frac{-(x-\mu)^2}{e\sigma^2}})$ but it's very difficult to take this integral, so:
-	$\forall$ normal random variable dist: 
-		$P(X<\mu)=P(X>\mu)=0.5$ 
-		$P(\mu-\sigma<X<\mu+\sigma)=0.6827$
-		$P(\mu-2\sigma<X<\mu+2\sigma)=0.9545$
-		$P(\mu-3\sigma<X<\mu+3\sigma)=0.9973$
-	**standard normal random variable**: $Z\approx N(0,1)$ 
-		$\Phi(z) = P(Z\leq z)$ 
+	$P(x<4.95)=F(4.95)=5*4.95-24.5$ 
+- probability at any point in a CDF is 0 since $\int\limits_a^b(u)du$ where $b=a$ is just $\int\limits^a_a(u)du=u(a-a)=0$ 
+#### $Ex$: Normal Distribution (Gaussian Distribution):
+	$f(x)=\dfrac{1}{\sqrt{2\pi}\sigma}e^{\dfrac{-(x-\mu)^2}{e\sigma^2}}-\infty< x< \infty$
+$Ex$: if $\mu =10$, $\sigma^2=4$,  $P(X>13)=\int\limits_{13}^\infty (\dfrac{1}{\sqrt{2\pi}\sigma}e^{\frac{-(x-\mu)^2}{e\sigma^2}})$ but it's very difficult to take this integral, so:
+$\forall$ normal random variable dist: 
+	$P(X<\mu)=P(X>\mu)=0.5$ 
+	$P(\mu-\sigma<X<\mu+\sigma)=0.6827$
+	$P(\mu-2\sigma<X<\mu+2\sigma)=0.9545$
+	$P(\mu-3\sigma<X<\mu+3\sigma)=0.9973$
+**standard normal random variable**: $Z\approx N(0,1)$ 
+	$\Phi(z) = P(Z\leq z)$ 
 ## probability mass function
 ## cumulative distribution functions 
