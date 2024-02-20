@@ -80,12 +80,15 @@ $Ex$: Cumulative Distribution
 	$\sigma^2=V(X)=\int\limits_{-\infty}^{\infty}(x-\mu)^2f(x)dx=\int\limits_{-\infty}^{\infty}x^2f(x)dx-\mu^2$ 
 $P(x<4.95)=F(4.95)=5*4.95-24.5$ 
 	probability at any point in a CDF is 0 since $\int\limits_a^b(u)du$ where $b=a$ is just $\int\limits^a_a(u)du=u(a-a)=0$ 
-$Ex$: Normal Distribution (Gaussian Distribution):
+Normal Distribution (Gaussian Distribution):
 	$f(x)=\dfrac{1}{\sqrt{2\pi}\sigma}e^{\dfrac{-(x-\mu)^2}{e\sigma^2}}$ $-\infty< x< \infty$ 
-	$\mu =10$, $\sigma^2=4$
-	$P(X>13)=\int\limits_{13}^\infty$
+	$Ex$: if $\mu =10$, $\sigma^2=4$,  $P(X>13)=\int\limits_{13}^\infty (\dfrac{1}{\sqrt{2\pi}\sigma}e^{\frac{-(x-\mu)^2}{e\sigma^2}})$ but it's very difficult to take this integral, so:
 	$\forall$ normal random variable dist: 
+		$P(X<\mu)=P(X>\mu)=0.5$ 
 		$P(\mu-\sigma<X<\mu+\sigma)=0.6827$
-		$P(\mu-\sigma<X<\mu+\sigma)=
+		$P(\mu-2\sigma<X<\mu+2\sigma)=0.9545$
+		$P(\mu-3\sigma<X<\mu+3\sigma)=0.9973$
+	**standard normal random variable**: $Z\approx N(0,1)$ 
+		$\Phi(z) = P(Z\leq z)$ 
 ## probability mass function
 ## cumulative distribution functions 
