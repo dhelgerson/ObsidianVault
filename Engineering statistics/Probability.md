@@ -82,5 +82,10 @@ $P(x<4.95)=F(4.95)=5*4.95-24.5$
 	probability at any point in a CDF is 0 since $\int\limits_a^b(u)du$ where $b=a$ is just $\int\limits^a_a(u)du=u(a-a)=0$ 
 $Ex$: Normal Distribution (Gaussian Distribution):
 	$f(x)=\dfrac{1}{\sqrt{2\pi}\sigma}e^{\dfrac{-(x-\mu)^2}{e\sigma^2}}$ $-\infty< x< \infty$ 
+	$\mu =10$, $\sigma^2=4$
+	$P(X>13)=\int\limits_{13}^\infty$
+	$\forall$ normal random variable dist: 
+		$P(\mu-\sigma<X<\mu+\sigma)=0.6827$
+		$P(\mu-\sigma<X<\mu+\sigma)=
 ## probability mass function
 ## cumulative distribution functions 
