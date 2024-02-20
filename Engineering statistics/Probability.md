@@ -80,5 +80,7 @@ $Ex$: Cumulative Distribution
 	$\sigma^2=V(X)=\int\limits_{-\infty}^{\infty}(x-\mu)^2f(x)dx=\int\limits_{-\infty}^{\infty}x^2f(x)dx-\mu^2$ 
 $P(x<4.95)=F(4.95)=5*4.95-24.5$ 
 	probability at any point in a CDF is 0 since $\int\limits_a^b(u)du$ where $b=a$ is just $\int\limits^a_a(u)du=u(a-a)=0$ 
+$Ex$: Normal Distribution (Gaussian Distribution):
+	$f(x)=\dfrac{1}{\sqrt{2\pi}\sigma}e^{\dfrac{-(x-\mu)^2}{e\sigma^2}}$ $-\infty< x< \infty$ 
 ## probability mass function
 ## cumulative distribution functions 
