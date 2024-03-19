@@ -2,14 +2,14 @@
 
 #include <iostream>
 
-class Stack{
+class Queue{
     private:
         Node *head;
         Node *tail;
         int len;
     public:
-        Stack():head(nullptr),tail(nullptr){}
-        ~Stack();
+        Queue():head(nullptr),tail(nullptr){}
+        ~Queue();
 
         void push(int payload);
         int peek(int &output);
@@ -18,22 +18,22 @@ class Stack{
         void display(std::ostream &output);
 };
 
-Stack::~Stack(){
+Queue::~Queue(){
     head->cascade();
     delete head;
 }
-void Stack::push(int payload){
-    if (head == nullptr){
-        head = new Node(payload);
-        tail = head;
-    }
-    else{
-        Node *tmp = head;
-        head = new Node(payload);
-        head->next = tmp;
-    }
-}
-int Stack::peek(int &output){
+// void Queue::push(int payload){
+//     if (head == nullptr){
+//         head = new Node(payload);
+//         tail = head;
+//     }
+//     else{
+//         Node *tmp = head;
+//         head = new Node(payload);
+//         head->next = tmp;
+//     }
+// }
+int Queue::peek(int &output){
     if (head){
         output = head->payload;
         return 1;
@@ -43,7 +43,7 @@ int Stack::peek(int &output){
     }
 }
 
-int Stack::pop(){
+int Queue::pop(){
     Node *tmp = head;
     if (head){
         head = head->next;
@@ -57,20 +57,19 @@ int Stack::pop(){
 
 
 // For Queues
+void Queue::push(int payload){
+    if (head == nullptr){
+        head = new Node(payload);
+        tail = head;
+    }
+    else{
+        Node *tmp = tail;
+        tail = new Node(payload);
+        tmp->next = tail;
+    }
+}
 
-// void Stack::push(int payload){
-//     if (head == nullptr){
-//         head = new Node(payload);
-//         tail = head;
-//     }
-//     else {
-//         Node *tmp = tail;
-//         tail = new Node(payload);
-//         tmp->next = tail;
-//     }
-// }
-
-void Stack::display(std::ostream &output){
+void Queue::display(std::ostream &output){
     Node *tmp = head;
     while (tmp) {
         output << tmp->payload << ' ';
