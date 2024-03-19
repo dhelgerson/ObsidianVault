@@ -13,7 +13,7 @@ class Stack{
 
         void push(int payload);
         int peek(int &output);
-        int pop(std::ostream &output);
+        int pop();
         // void append(int payload);
         void display(std::ostream &output);
 };
@@ -36,11 +36,25 @@ void Stack::push(int payload){
 int Stack::peek(int &output){
     if (head){
         output = head->payload;
+        return 1;
     }
     else {
         return 0;
     }
 }
+
+int Stack::pop(){
+    Node *tmp = head;
+    if (head){
+        head = head->next;
+        delete tmp;
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+
 
 // For Queues
 

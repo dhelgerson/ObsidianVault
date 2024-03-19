@@ -1,29 +1,37 @@
 // Challenge01
 // Drew Helgerson - tah568 - CSE2383 - 02/07/24
 
-#include <iostream>
-#include "LinkedList.h"
+// #include <iostream>
+#include "Stack.h"
 using namespace std;
 
 int main(){
     
-    LinkedList LL;
-    LL.append(5);
-    LL.append(33);
-    LL.append(1);
-    LL.append(7);
-    LL.append(33);
-    LL.append(12);
-    LL.display( cout );
-    LL.remove(33);
-    LL.display( cout );
-    LL.prepend(12);
-    LL.display( cout );
-    LL.remove(13);
-    LL.display( cout );
-    // LL.tailDisplay( cout );
-    // LL.tailRemove( 12 );
-    // LL.display( cout );
+    Stack S;
+    int tmp;
+    S.push(5);
+    S.peek(tmp);
+    cout << tmp << endl;
+    S.push(33);
+    S.push(1);
+    S.push(7);
+    S.peek(tmp);
+    cout << tmp << endl;
+    S.push(33);
+    S.push(12);
+    S.display( cout );
+    S.pop( );
+    S.display( cout );
+    S.push(14);
+    S.display( cout );
+    S.pop( );
+    S.pop( );
+    S.display( cout );
+    S.pop( );
+    S.pop( );
+    S.display( cout );
+    S.peek(tmp);
+    cout << tmp << endl;
 
     return 0;
 }
