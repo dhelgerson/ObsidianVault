@@ -21,3 +21,5 @@ $1+0$
 $1$
 ## laws of boolean algebra
 (exactly like boolean logic laws. just w/ the signs switched 'cause boolean algebra)
+## functional completeness
+a set of operations is functionally complete if any boolean function can be expressed using only operations from the set.
