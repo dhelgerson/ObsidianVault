@@ -7,3 +7,5 @@ sample mean $\not=$ population mean
 
 $\bar x$ = sample mean
 $\mu$ = population mean
+## Plot Box
+$Ex:$ Dataset: 
