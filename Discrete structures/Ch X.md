@@ -23,3 +23,7 @@ $1$
 (exactly like boolean logic laws. just w/ the signs switched 'cause boolean algebra)
 ## functional completeness
 a set of operations is functionally complete if any boolean function can be expressed using only operations from the set.
+
+boolean algebra is used to describe electric gates
+
+and, or, and not
