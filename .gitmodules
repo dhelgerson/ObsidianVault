@@ -1,0 +1,3 @@
+[submodule "introCompProg"]
+	path = introCompProg
+	url = git@github.com:dhelgerson/introCompProg.git
