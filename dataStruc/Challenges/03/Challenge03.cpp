@@ -20,14 +20,12 @@ int main(){
     b.insert(57);
     b.insert(89);
     b.insert(90);
-    // cout << b.find(44) << endl;
-    // cout << b.find(62) << endl;
-
-    b.inOrder(cout);
+    cout << b.find(44) << endl;
+    cout << b.find(62) << endl;
     b.remove(62);
-    // cout << b.find(62) << endl;
-    // b.insert(44);
-    // cout << b.find(44) << endl;
+    cout << b.find(62) << endl;
+    b.insert(44);
+    cout << b.find(44) << endl;
     b.postOrder(cout);
     b.preOrder(cout);
     b.inOrder(cout);

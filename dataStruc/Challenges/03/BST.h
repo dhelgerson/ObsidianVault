@@ -138,13 +138,16 @@ bool BST::remove(Node *&node, int data){
             node = nullptr;
         }
         else if (degree(node) == 1){
+            Node *tmp = new Node;
             if (node->left != nullptr){
-                delete node;
+                tmp = node;
                 node = node->left;
+                delete tmp;
             }
             else {
-                delete node;
+                tmp = node;
                 node = node->right;
+                delete tmp;
             }
         }
         else if (degree(node) == 2){
