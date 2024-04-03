@@ -22,6 +22,8 @@ int main(){
     b.insert(90);
     // cout << b.find(44) << endl;
     // cout << b.find(62) << endl;
+
+    b.inOrder(cout);
     b.remove(62);
     // cout << b.find(62) << endl;
     // b.insert(44);
