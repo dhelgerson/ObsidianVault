@@ -15,7 +15,7 @@ formal deviance is considered crime
 - normative compliance is the act of abiding by society's norms or simply following the rules of group life
 - **formal social sanctions** are rules or laws prohibiting deviant criminal behavior.
 - **Informal social sanctions** are unspoken rules and expectations about the behavior of individuals
-## Symbolic interactionist theories of deviance
+## Symbolic Interactionist theories of deviance
 ### Labeling Theory
 - people see how they are labeled and accept the label as true
 - people behave the way they think someone with their label should behave.
