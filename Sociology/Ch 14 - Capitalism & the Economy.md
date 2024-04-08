@@ -27,3 +27,16 @@ precapitalist economic system characterized by the presence of lords, vassals, s
 - Max Weber
 	- linked the rise of capitalism to technology, idea, and beliefs as well as the protestant reformation
 	- became concerned that capitalism caused people to become so obsessed with working and making money to the point that they lacked the free time to enjoy the fruits of their labor
+### Changing Wages
+- today, people actually earn less money (relative to cost of living) than in the early 1900's because then:
+	- only men were supposed to work
+	- men were paid a family wage - enough to provide for a whole family
+	- unfortunately the higher wage came at the cost of women's freedom & autonomy - **BS**
+### Benefits
+- compared to other industrialized countries and some developing countries, americans work longer hours and have fewer vacation benefits and less generous femily leave policies
+- even when generous benefits are available, workers often fail to take advantage of them
+### Service Sector
+the section of economy that provides intangible services
+- has grown rapidly over the last 30 yrs
+- much work in the service sector involves **emotional labor** - managing emotions and their outward expression to meet the expectations of a job
+- 
