@@ -39,4 +39,7 @@ precapitalist economic system characterized by the presence of lords, vassals, s
 the section of economy that provides intangible services
 - has grown rapidly over the last 30 yrs
 - much work in the service sector involves **emotional labor** - managing emotions and their outward expression to meet the expectations of a job
-- 
+## Globalization
+the processes that create and intensify worldiwde social exchanges and interdependencies
+- creates an increase in trade and economic exchanges
+- magnifies the division between the world's rich and poor
