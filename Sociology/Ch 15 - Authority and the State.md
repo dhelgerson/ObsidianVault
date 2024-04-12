@@ -23,3 +23,7 @@ a legal-rational organization or mode of admin that governs with reference to ru
 - supposed to operate under a system of meritocracy
 ## The Milgram Experiment:
 - devised in 1961 to see how far ordinary people would to go obey a scientific authority figure
+## Definitions of Power
+- **Power**: the ability to carry out one's will despite resistance
+- **Domination**: the probability that a command with specific content will be obeyed by a given group of people
+	- domination by authority refers to a situation in which the will of the ruler influences the conduct of the ruled such that they act as if the ruler's will is also their own
