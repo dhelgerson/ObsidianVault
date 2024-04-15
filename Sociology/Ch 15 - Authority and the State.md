@@ -36,3 +36,11 @@ a system in which each state is recognized as territorially-sovereign by fellow 
 - *principle of non-interference*
 ## Welfare state
 where state is responsible for welfare of citizens
+- logic of industrialism thesis holds that nations develop social welfare benefits to satisfy the social needs created by industrialization
+- Neo-Marxist theory explains that welfare state as the mediator of class conflict, which was created to ensure the long-term health of society
+- statist theories tie the development of the welfare state to government bureaucrats, who design policies based on perceived social conditions because doing so enhances their power in society
+## Citizenship rights
+- T.H. Marshal identified three types of citizenship rights, which are the rights guaranteed to each law-abiding citizen in a nation-state
+	- Civil rights: guarantee citizens personal freedom without state interference
+	- Political rights: right to participate in politics
+	- Social rights: guarantee protection by state
