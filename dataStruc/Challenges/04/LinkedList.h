@@ -3,8 +3,8 @@
 
 class LinkedList{
     private:
-        Node *head;
-        Node *tail;
+        LLNode *head;
+        LLNode *tail;
         int len;
     public:
         LinkedList():head(nullptr),tail(nullptr){}
@@ -25,28 +25,28 @@ LinkedList::~LinkedList(){
 }
 void LinkedList::prepend(int payload){
     if (head == nullptr){
-        head = new Node(payload);
+        head = new LLNode(payload);
         tail = head;
     }
     else{
-        Node *tmp = head;
-        head = new Node(payload);
+        LLNode *tmp = head;
+        head = new LLNode(payload);
         head->next = tmp;
     }
 }
 void LinkedList::append(int payload){
     if (head == nullptr){
-        head = new Node(payload);
+        head = new LLNode(payload);
         tail = head;
     }
     else {
-        Node *tmp = tail;
-        tail = new Node(payload);
+        LLNode *tmp = tail;
+        tail = new LLNode(payload);
         tmp->next = tail;
     }
 }
 void LinkedList::display(std::ostream &output){
-    Node *tmp = head;
+    LLNode *tmp = head;
     while (tmp) {
         output << tmp->payload << ' ';
         tmp = tmp->next;
@@ -54,7 +54,7 @@ void LinkedList::display(std::ostream &output){
     output << std::endl;
 }
 bool LinkedList::search(int key){
-    Node *tmp = head;
+    LLNode *tmp = head;
     while (tmp){
         if (tmp->payload == key){
             return true;
@@ -66,8 +66,8 @@ bool LinkedList::search(int key){
     return false;
 }
 void LinkedList::remove(int key){
-    Node *tmp = head;
-    Node *prev;
+    LLNode *tmp = head;
+    LLNode *prev;
     while (tmp){
         if (tmp->payload == key){
             break;

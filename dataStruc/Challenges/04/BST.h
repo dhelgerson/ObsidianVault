@@ -1,31 +1,31 @@
 #include <iostream>
 #include "BSTNode.h"
 
-using namespace std;
+// using namespace std;
 
 class BST{
     private:
-        Node* root;
-        bool insert(Node *&node, int data);
-        bool remove(Node *&node, int data);
-        bool find(Node* node, int data);
-        void inOrder(Node* node, ostream& os);
-        void preOrder(Node* node, ostream& os);
-        void postOrder(Node* node, ostream& os);
-        void destroy(Node*& node);
-        int degree(Node*& node);
+        BSTNode* root;
+        bool insert(BSTNode *&node, int data);
+        bool remove(BSTNode *&node, int data);
+        bool find(BSTNode* node, int data);
+        void inOrder(BSTNode* node, std::ostream& os);
+        void preOrder(BSTNode* node, std::ostream& os);
+        void postOrder(BSTNode* node, std::ostream& os);
+        void destroy(BSTNode*& node);
+        int degree(BSTNode*& node);
     public:
         BST(): root(nullptr) {}
         // ~BST();
         bool insert(int data);
         bool remove(int data);
         bool find(int data);
-        void inOrder(ostream& os);
-        void preOrder(ostream& os);
-        void postOrder(ostream& os);
+        void inOrder(std::ostream& os);
+        void preOrder(std::ostream& os);
+        void postOrder(std::ostream& os);
 };
 
-int BST::degree(Node*& node){
+int BST::degree(BSTNode*& node){
     int degree = 0;
     if (node->right != nullptr){
         degree = 1;
@@ -36,13 +36,13 @@ int BST::degree(Node*& node){
     return degree;
 }
 
-void BST::postOrder(ostream& os){
+void BST::postOrder(std::ostream& os){
     os << "postOrder:";
     postOrder(root,os);
-    os << endl;
+    os << std::endl;
 }
 
-void BST::postOrder(Node* node, ostream& os){
+void BST::postOrder(BSTNode* node, std::ostream& os){
     if (node->left != nullptr){
         postOrder(node->left,os);
     }
@@ -52,13 +52,13 @@ void BST::postOrder(Node* node, ostream& os){
     os << " " << node->data;
 }
 
-void BST::preOrder(ostream& os){
+void BST::preOrder(std::ostream& os){
     os << "preOrder:";
     preOrder(root,os);
-    os << endl;
+    os << std::endl;
 }
 
-void BST::preOrder(Node* node, ostream& os){
+void BST::preOrder(BSTNode* node, std::ostream& os){
     os << " " << node->data;
     if (node->left != nullptr){
         preOrder(node->left,os);
@@ -68,13 +68,13 @@ void BST::preOrder(Node* node, ostream& os){
     }
 }
 
-void BST::inOrder(ostream& os){
+void BST::inOrder(std::ostream& os){
     os << "inOrder:";
     inOrder(root,os);
-    os << endl;
+    os << std::endl;
 }
 
-void BST::inOrder(Node* node, ostream& os){
+void BST::inOrder(BSTNode* node, std::ostream& os){
     if (node->left != nullptr){
         inOrder(node->left,os);
     }
@@ -88,9 +88,9 @@ bool BST::insert(int data){
     return insert(root,data);
 }
 
-bool BST::insert(Node *&node, int data){
+bool BST::insert(BSTNode *&node, int data){
     if (node == nullptr){
-        node = new Node (data);
+        node = new BSTNode (data);
         return true;
     }
     else if (data < node->data){
@@ -105,7 +105,7 @@ bool BST::find(int data){
     return find(root,data);
 }
 
-bool BST::find(Node* node, int data){
+bool BST::find(BSTNode* node, int data){
     if (node == nullptr){
         return false;
     }
@@ -124,7 +124,7 @@ bool BST::remove(int data){
     return remove(root,data);
 }
 
-bool BST::remove(Node *&node, int data){
+bool BST::remove(BSTNode *&node, int data){
     if (node == nullptr){
         return false;
     }
@@ -135,7 +135,7 @@ bool BST::remove(Node *&node, int data){
         remove(node->right,data);
     }
     else if (data == node->data){
-        Node *tmp = new Node;
+        BSTNode *tmp = new BSTNode;
         if (degree(node) == 0){
             tmp = node;
             node = nullptr;
