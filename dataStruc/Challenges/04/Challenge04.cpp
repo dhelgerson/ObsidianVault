@@ -9,62 +9,94 @@ using namespace std;
 #include "DLL.h"
 #include "BST.h"
 
-void timeInsertion(ostream &stream, int count)
+auto timeNow(){
+    return chrono::high_resolution_clock::now();
+}
+
+void timeStruct(ostream &stream, int startNo, int endNo,bool random)
 {
     BST b;
     LinkedList l;
-    vector<int> randomInts;
+    vector<int> ints;
 
-    stream << "Insertion(ns): " << count << " random no's" << endl;
+    stream << "Insertion(ns): " << endNo - startNo << " random no's" << endl;
     stream << "BST:\tLL:" << endl;
     
-
-    for(int i = 0; i < count; ++i)
+    if(endNo - startNo < 0)
     {
-        randomInts.push_back(rand() % 999 + 1);
+        for (int i = startNo; i > endNo; i--)
+        {
+            if (random)
+            {
+                ints.push_back(rand() % 999 + 1);
+            } 
+            else 
+            {
+                ints.push_back(i);
+            }
+        }
     }
-    auto startTime = chrono::high_resolution_clock::now();
-    for(int i = 0; i < count; i++)
+    else 
     {
-        b.insert(randomInts[i]);
+        for(int i = startNo; i < endNo; ++i)
+        {
+            if (random)
+            {
+                ints.push_back(rand() % 999 + 1);
+            } 
+            else 
+            {
+                ints.push_back(i);
+            }
+            
+        }
     }
-    auto endTime = chrono::high_resolution_clock::now();
+    
+    auto startTime = timeNow(); //chrono::high_resolution_clock::now();
+    for(int i = 0; i < ints.size(); i++)
+    {
+        b.insert(ints[i]);
+    }
+    auto endTime = timeNow();
     auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
     stream << duration;    
 
-    startTime = chrono::high_resolution_clock::now();
-    for(int i = 0; i < count; i++)
+    startTime = timeNow();
+    for(int i = 0; i < ints.size(); i++)
     {
-        l.append(randomInts[i]);
+        l.append(ints[i]);
     }
-    endTime = chrono::high_resolution_clock::now();
+    endTime = timeNow();
     duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
     stream << "\t" << duration << endl;
 
     cout << "Recall(ns):" << endl;
-    startTime = chrono::high_resolution_clock::now();
-    for(int i = 0; i < count; i++)
+    startTime = timeNow();
+    for(int i = 0; i < ints.size(); i++)
     {
-        b.find(randomInts[i]);
+        b.find(ints[i]);
     }
-    endTime = chrono::high_resolution_clock::now();
+    endTime = timeNow();
     duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
     stream << duration;
 
-    startTime = chrono::high_resolution_clock::now();
-    for(int i = 0; i < count; i++)
+    startTime = timeNow();
+    for(int i = 0; i < ints.size(); i++)
     {
-        l.search(randomInts[i]);
+        l.search(ints[i]);
     }
-    endTime = chrono::high_resolution_clock::now();
+    endTime = timeNow();
     duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
-    stream << "\t" << duration << endl;
+    stream << "\t" << duration << endl << endl;
 }
 
 int main()
 {
     // srand(time(nullptr)); // comment for testing
-    timeInsertion(cout,12);
-    timeInsertion(cout,24);
-    timeInsertion(cout,200);
+    timeStruct(cout,0,12,true);
+    timeStruct(cout,0,24,true);
+    timeStruct(cout,0,200,true);
+    timeStruct(cout,0,1000,false);
+    timeStruct(cout,1000,0,false);
+
 }
