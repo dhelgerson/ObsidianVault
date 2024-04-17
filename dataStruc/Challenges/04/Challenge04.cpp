@@ -19,7 +19,9 @@ void timeStruct(ostream &stream, int startNo, int endNo,bool random)
     LinkedList l;
     vector<int> ints;
 
-    stream << "Insertion(ns): " << endNo - startNo << " random no's" << endl;
+    stream << "Insertion(ns): " << abs(endNo - startNo);
+    if(random) stream << " random";
+    stream << " no's from " << startNo << " to " << endNo << endl;
     stream << "BST:\tLL:" << endl;
     
     if(endNo - startNo < 0)
@@ -40,15 +42,8 @@ void timeStruct(ostream &stream, int startNo, int endNo,bool random)
     {
         for(int i = startNo; i < endNo; ++i)
         {
-            if (random)
-            {
-                ints.push_back(rand() % 999 + 1);
-            } 
-            else 
-            {
-                ints.push_back(i);
-            }
-            
+            if (random) ints.push_back(rand() % 999 + 1); 
+            else ints.push_back(i);            
         }
     }
     
@@ -98,5 +93,4 @@ int main()
     timeStruct(cout,0,200,true);
     timeStruct(cout,0,1000,false);
     timeStruct(cout,1000,0,false);
-
 }
