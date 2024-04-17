@@ -88,6 +88,7 @@ void timeStruct(ostream &stream, int startNo, int endNo,bool random)
 int main()
 {
     // srand(time(nullptr)); // comment for testing
+    
     timeStruct(cout,0,12,true);
     timeStruct(cout,0,24,true);
     timeStruct(cout,0,200,true);
