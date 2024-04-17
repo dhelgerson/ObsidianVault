@@ -41,7 +41,24 @@ void timeInsertion(ostream &stream, int count)
     duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
     stream << "\t" << duration << endl;
 
-    
+    cout << "Recall(ns):" << endl;
+    startTime = chrono::high_resolution_clock::now();
+    for(int i = 0; i < count; i++)
+    {
+        b.find(randomInts[i]);
+    }
+    endTime = chrono::high_resolution_clock::now();
+    duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
+    stream << duration;
+
+    startTime = chrono::high_resolution_clock::now();
+    for(int i = 0; i < count; i++)
+    {
+        l.search(randomInts[i]);
+    }
+    endTime = chrono::high_resolution_clock::now();
+    duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
+    stream << "\t" << duration << endl;
 }
 
 int main()
@@ -50,5 +67,4 @@ int main()
     timeInsertion(cout,12);
     timeInsertion(cout,24);
     timeInsertion(cout,200);
-        
 }
