@@ -87,7 +87,11 @@ void timeStruct(ostream &stream, int startNo, int endNo,bool random)
 
 int main()
 {
-    // srand(time(nullptr)); // comment for testing
+    srand(time(nullptr)); // comment for testing
+    /*
+    Note: even though the randomization can be fixed, the code will still 
+    have a fair amount of deviation in execution times due to the kernel overhead.
+    */
     
     timeStruct(cout,0,12,true);
     timeStruct(cout,0,24,true);
