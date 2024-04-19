@@ -28,21 +28,15 @@ void timeStruct(ostream &stream, int startNo, int endNo,bool random)
     {
         for (int i = startNo; i > endNo; i--)
         {
-            if (random)
-            {
-                ints.push_back(rand() % 999 + 1);
-            } 
-            else 
-            {
-                ints.push_back(i);
-            }
+            if (random) ints.push_back(rand() % 1000 + 1);
+            else ints.push_back(i);
         }
     }
     else 
     {
         for(int i = startNo; i < endNo; ++i)
         {
-            if (random) ints.push_back(rand() % 999 + 1); 
+            if (random) ints.push_back(rand() % 1000 + 1);
             else ints.push_back(i);            
         }
     }
