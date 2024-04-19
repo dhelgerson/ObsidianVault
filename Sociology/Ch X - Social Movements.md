@@ -24,4 +24,4 @@ action that takes place in groups and diverges from the social norms of the situ
 - **routinization** mvmt becomes institutionalized and a formal structure takes place
 ## mvnts & change
 - not all change is produced by a social mvnt
-- changes are not valued in the same way by all people
+- changes are not valued in the same way by all people 
