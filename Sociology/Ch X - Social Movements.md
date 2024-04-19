@@ -19,6 +19,9 @@ action that takes place in groups and diverges from the social norms of the situ
 - **Resource-mobilization theory**: emphasizes political context and goals but also states that social movements are unlikely to emerge without the necessary resources
 ## Stages
 3 stages:
-- **emergence**: the social problem 
-- **coaliscence**
-- **routinization**
+- **emergence**: the social problem is being addressed
+- **coaliscence**: resources are mobilized and concrete action is taken
+- **routinization** mvmt becomes institutionalized and a formal structure takes place
+## mvnts & change
+- not all change is produced by a social mvnt
+- changes are not valued in the same way by all people
