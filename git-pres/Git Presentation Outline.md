@@ -13,14 +13,10 @@
 Imagine you're working on a group project with two others. You're all editing a document together. One person, Alice, decides to rewrite a big section without telling the others. Later, when everyone combines their work, chaos erupts because Alice's changes clash with the rest. If they had a system to work on their parts separately, like having their own drafts, it would avoid the mess.
 
 ## Solution
-- Change-based versioning (not git)
-
-![image](deltas.png)
+![Change-based versioning (not git)](images/deltas.png)
 
 ## Solution cont.
-- snapshot-based versioning (git)
-
-![image](snapshots.png)
+![snapshot-based versioning (git)](images/snapshots.png)
 
 ## Real Definition
 git is a command-line, snapshot-based versioning tool
@@ -88,8 +84,6 @@ now push your Repo to a remote
 	- `git stash`
 	- `git switch <correct-branch>`
 	- `git stash pop`
-
-## Collaboration
 
 ## Oh crap
 - you deleted a file in your tree and your IDE doesn't have it anywhere in it's history
