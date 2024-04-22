@@ -51,9 +51,18 @@ now push your Repo to a remote
 # Practical Examples
 ## Stashing
 - we all make mistakes
-- 
+- what if we've made changes somewhere we don't want to
+- just `git stash`
+- this will tuck away your changes where you can retrieve them later and restore your active tree to it's previous state
+- e.g. you made changes to the wrong branch
+	- `git stash`
+	- `git switch <correct-branch>`
+	- `git stash pop`
 ## Collaboration
+TODO
 ## Oh crap
+- you deleted a file in your tree and your IDE doesn't have it anywhere in it's history
+- just `git checkout <last-commit-with-file> <file>`
 ## New Features
 ## Tagged Commits
 
