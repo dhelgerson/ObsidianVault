@@ -9,11 +9,18 @@
 - Git is not Dropbox!
 - Git is not any kind of web-service!
 
-## The problem Git solves/ What is versioning
-- scenario of versioning headaches
-- Hook: what if it was easier
-- change-based versioning
-- snapshot-based versioning
+## The Problem
+Imagine you're working on a group project with two others. You're all editing a document together. One person, Alice, decides to rewrite a big section without telling the others. Later, when everyone combines their work, chaos erupts because Alice's changes clash with the rest. If they had a system to work on their parts separately, like having their own drafts, it would avoid the mess.
+
+## Solution
+- Change-based versioning (not git)
+
+![image](deltas.png)
+
+## Solution cont.
+- snapshot-based versioning (git)
+
+![image](snapshots.png)
 
 ## Real Definition
 git is a command-line, snapshot-based versioning tool
