@@ -77,4 +77,9 @@ TODO
 ## Tagged Commits
 - you're working on a project that people regularly install and depend on
 - you want to keep your repository current with your changes, but these changes may not be stable
-- you could use a different branch, but this isn't very transpare
+- you could use a different branch, but this isn't very transparent to the users nor is it best practice
+- enter tagged commits
+- any commit that you designate can be tagged. 
+- this is useful for showing your users which commit to use e.g. "release version"
+- tags can be made at commit time with `git commmit -m "<your-tag-here>"` or afterwards with `git tag -a "<your-tag>" <commit-hash>`
+- now when your users setup your project, then can rest assured that the major version tagged commit "should" be stable
