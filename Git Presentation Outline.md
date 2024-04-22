@@ -105,6 +105,8 @@ now push your Repo to a remote
 - you want to keep your repository current with your changes, but these changes may not be stable
 - you could use a different branch, but this isn't very transparent to the users nor is it best practice
 - enter tagged commits
+
+## Tagged Commits cont.5
 - any commit that you designate can be tagged. 
 - this is useful for showing your users which commit to use e.g. "release version"
 - tags can be made at commit time with `git commmit -m "<your-tag-here>"` or afterwards with `git tag -a "<your-tag>" <commit-hash>`
