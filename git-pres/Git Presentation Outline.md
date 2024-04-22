@@ -19,7 +19,7 @@ Imagine you're working on a group project with two others. You're all editing a 
 ![snapshot-based versioning (git)](images/snapshots.png)
 
 ## Real Definition
-git is a command-line, snapshot-based versioning tool
+- git is a command-line, snapshot-based versioning tool
 - created by Linux Torvalds to manage massive open source projects. i.e. the Linux kernel
 - used widely across the globe, for personal and enterprise use
 
@@ -107,7 +107,7 @@ now push your Repo to a remote
 - you could use a different branch, but this isn't very transparent to the users nor is it best practice
 - enter tagged commits
 
-## Tagged Commits cont.5
+## Tagged Commits cont.
 - any commit that you designate can be tagged. 
 - this is useful for showing your users which commit to use e.g. "release version"
 - tags can be made at commit time with `git commmit -m "<your-tag-here>"` or afterwards with `git tag -a "<your-tag>" <commit-hash>`
