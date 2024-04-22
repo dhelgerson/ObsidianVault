@@ -63,7 +63,18 @@ TODO
 ## Oh crap
 - you deleted a file in your tree and your IDE doesn't have it anywhere in it's history
 - just `git checkout <last-commit-with-file> <file>`
-## New Features
+- the file has returned to it's last commit'ed state
+- this is why it's important to commit after each meaningful change
+## Upstream Changes
+- your working on a fork of a project
+- the upstream project has made changes
+- you can't submit a PR unless your fork includes those changes
+- the GitHub Web-UI provides a way to do this
+- there's an easier way:
+- `git remote add <upstream-url>.git`
+- `git fetch upstream`
+- `git rebase upstream`
 ## Tagged Commits
-
-
+- you're working on a project that people regularly install and depend on
+- you want to keep your repository current with your changes, but these changes may not be stable
+- you could use a different branch, but this isn't very transpare
