@@ -28,3 +28,19 @@ Grading:
 - both midterm and final can be sustituted for a project
 - require 10-12min presentation
 
+# Lecture 1
+- can machines think?
+    - turing test
+- in the 50s, massive investments were made into ai
+    - it didn't work
+- neural networks (can you believe it) were used
+- the name AI was invented in 1956 in dartmouth
+- lots of funding and enthusiasm
+    - alot of exageration in order to secure funding
+    - they all looked bad 'cause the couldn't deliver
+- in the 80s, "expert systems" were made
+    - they also sucked
+- in 2012ish deep learning started
+    - started w/ image classification
+    - huge boom after that
+
