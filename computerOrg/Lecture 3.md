@@ -19,4 +19,6 @@ $f=(\bar{x}+\bar{y})\cdot\bar{z}$
 
 
 ## Nand
-not(x) = x
+$\bar{x} = x\cdot nand(x)$ 
+x and y = not(xnandy)
+x or y = not(not(x)and not(y))
