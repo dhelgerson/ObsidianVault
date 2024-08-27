@@ -63,4 +63,11 @@
 - use case diagrams
 	- shows the actors on the left and their interactions on the system
 		- a visual representation of the system
-	- any 
+	- any external systems on the right (if necessary)
+### scenarios
+- each scenario will be a single requirement with a unique name and priority
+	- high,med,low
+	- identifies actors
+	- step-by-step walk-through of the system
+		- necessary validity checks
+		- exact sequences
