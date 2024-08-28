@@ -1,14 +1,8 @@
 #include <stdio.h>
-#include <string.h>
 
-int main(){
-    char *stl = "Hello world";
-    char *nstl;
+struct BST
+{
+    struct Node *root;
+};
 
-    strcpy(stl,nstl);
-    strcmp(stl,nstl);
-
-    printf("%s\n",stl);
-
-    return 0;
-}
+int insert(const char* &s);

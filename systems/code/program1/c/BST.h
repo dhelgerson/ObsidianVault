@@ -9,8 +9,13 @@ typedef struct {
 
 } Node;
 
-struct BST {
+typedef struct {
 
     Node *root;
 
-};
+} BST;
+
+BST createBST();
+int insertNode(BST **BST, Node **node);
+int insertString(BST **BST, const char *s);
+int search(BST **BST, const char *s);
