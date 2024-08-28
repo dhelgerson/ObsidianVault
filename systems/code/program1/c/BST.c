@@ -44,6 +44,6 @@ void postOrder(Node **n)
     {
         postOrder(&(*n)->right);
     }
-    printf("%s",(*n)->value);
+    printf("%s\n",(*n)->value);
 
 }
