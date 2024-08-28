@@ -1,21 +1,17 @@
 #pragma once
 #include <string.h>
+#include <stdlib.h>
 
-typedef struct {
+struct Node {
 
-    char value[0];
-    Node *left;
-    Node *right;
+    char *value;
+    struct Node *left;
+    struct Node *right;
 
-} Node;
+};
+typedef struct Node Node;
 
-typedef struct {
+int insert(Node **n, const char *s);
+void postOrder(Node **n);
 
-    Node *root;
-
-} BST;
-
-BST createBST();
-int insertNode(BST **BST, Node **node);
-int insertString(BST **BST, const char *s);
-int search(BST **BST, const char *s);
+Node *newNode(const char *s);
