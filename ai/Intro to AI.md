@@ -6,4 +6,3 @@ Ex: a thermostat
 - a thermostat takes in the current temperature, and outputs whether the ac or heat should be on or off. 
 Ex: gpt-4o
 - on the flip side. gpt-4o is on the far opposite. it can do very many other things
-- 
