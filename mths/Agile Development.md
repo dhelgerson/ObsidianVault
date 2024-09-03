@@ -17,7 +17,24 @@
 - focuses a lot on adaptiveness and collaboration between team members
 - agile is an umbrella term for software dev that follows the 4 values in the manifesto for agile software dev and the 12 principles behind it
 ### 4 values
-- individuals and interactions over processes and tools
-- working software over comprehensive documentation
-- customer collaboration
-- 
+- **individuals and interactions** over processes and tools
+- **working software** over comprehensive documentation
+- **customer collaboration** over contract negotiation
+- **responding to change** over following a plan
+### 12 principles (paraphrased)
+- you should always be developing the software
+- you should always be getting feedback and incorporating it into your change.
+	- this goes with the expectation that you always have a somewhat functioning code-base, even during dev,
+- **DELIVER THE DANG SOFTWARE**
+- ideally you should say "yes" to any demand your customers have. this makes your company more competitive "allegedly"
+## Implementing agile
+- iterative and incremental progress
+	- typically there's a "sprint" of a project. this lasts 1-4 weeks and encompasses every stage of dev.
+- efficient, face-to-face communication
+	- team members collaborate
+		- many places say that devs should be in the same room
+	- when dealing w/ customers, there tends to be an elected liason
+- short feedback loop
+	- the daily meeting are now called stand-ups
+- quality control
+	- tools such as continuous integration testing, unit testing, pair programming, and more are typically used often to improve quality and streamline dev
