@@ -38,3 +38,14 @@
 	- the daily meeting are now called stand-ups
 - quality control
 	- tools such as continuous integration testing, unit testing, pair programming, and more are typically used often to improve quality and streamline dev
+## downsides to agile
+- difficult to implement
+	- training and coordination is key
+- entry-level programmers usually aren't a good fit
+- agile can be hard to adapt in larger companies
+- dev burnout is a real thing
+- production design suffers due to lack of documentation
+- confusion
+## critisisms
+- it's young and controversial
+- many large coorps claim it's too inefficient to adopt
