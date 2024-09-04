@@ -10,7 +10,7 @@ int main()
 {
     int fd;
     char *data[20];
-    fd = open('raw.dat',O_RDONLY);
+    fd = open("raw.dat",O_RDONLY);
     read(fd,data,20);
 
     return 0;
