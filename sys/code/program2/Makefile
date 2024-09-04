@@ -5,4 +5,4 @@ run: main
 	./main
 
 clean:
-	rm -f main double.dat
+	rm -f main data.dat

@@ -14,7 +14,7 @@ int main()
     unsigned char bytes[20];
 
     in = open("raw.dat",O_RDONLY);
-    out = open("double.dat",O_WRONLY|O_CREAT|O_TRUNC,0766);
+    out = open("data.dat",O_WRONLY|O_CREAT|O_TRUNC,0766);
 
     while(read(in,bytes,20) > 0)
         for(int i=2; i<20;i+=2) {
