@@ -10,7 +10,7 @@ int main()
 {
     int fd;
     short s;
-    double d;
+    double val;
     unsigned char bytes[20];
 
     fd = open("raw.dat",O_RDONLY);
@@ -18,9 +18,9 @@ int main()
 
     for(int i=2; i<20;i+=2) {
         s = ((short)bytes[i+1] << 8) | bytes[i];
-        d = s / 32768;
+        val = s / 32768;
         printf("%i ",i);
-        printf("%hi %lf\n",s,d);
+        printf("%hi %lf\n",s,val);
     }
 
     return 0;
