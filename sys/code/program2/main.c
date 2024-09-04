@@ -9,7 +9,7 @@
 int main()
 {
     int fd;
-    void *data = malloc(20);
+    char *data[20];
     fd = open('raw.dat',O_RDONLY);
     read(fd,data,20);
 
