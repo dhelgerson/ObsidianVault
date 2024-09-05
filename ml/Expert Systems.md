@@ -28,6 +28,9 @@
 - in simple systems,priority can be establed by the position in the list
 - in clips?, fire the rules that uses the most recently entered data 
 
-## advantages and disadvantages of rule-based systems
+## Advantages and Disadvantages of rule-based systems
 - inability to learn
     - this has been circumvented with clever logic
+## Metarules
+1. rules supplied by an expert have higher priorities than rules supplied by novice
+2. rules governing the rescue of human lives have higher priorities than rules concerned with clearing
