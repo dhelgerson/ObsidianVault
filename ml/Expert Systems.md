@@ -25,7 +25,7 @@
 - 
 
 ## Methods used for conflict resolution
-- in simple systems,priority can be establed by the position in the list
+- in simple systems,priority can be established by the position in the list
 - in clips?, fire the rules that uses the most recently entered data 
 
 ## Advantages and Disadvantages of rule-based systems

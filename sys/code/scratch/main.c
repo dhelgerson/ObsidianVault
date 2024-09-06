@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <fcntl.h>
-#include <sys/stat.h>
-#include <errno.h>
 #include <string.h>
+#include <signal.h>
+#include <errno.h>
+#include <dirent.h>
 
-int checkError(int val, const char *msg)
+int checkerr(int val, const char *msg)
 {
     if (val == -1)
     {
@@ -15,23 +15,26 @@ int checkError(int val, const char *msg)
     }
     return val;
 }
+
 int main()
 {
-    int fd;
-    int val;
-    int numWr;
+    DIR *dir;
+    struct dirent *d;
 
-    fd = checkError(open("test.dat",O_WRONLY | O_CREAT | O_TRUNC, 0766), "Failed to open file");
-    for (val = 1000; val < 2000; val++)
+    dir = opendir(".");
+    if (dir == NULL)
     {
-        numWr = checkError(write(fd, &val,sizeof(int)),"write failed");
+        perror("opendir failed :(");
+        exit(EXIT_FAILURE);
     }
-    fd = open("test.dat",O_RDONLY);
-    while (numWr = checkError(read(fd, &val,sizeof(int)),"failed to read") > 0)
+    
+    while (1)
     {
-        printf("%d ",val);
+        d = readdir(dir);
+        if (d == NULL) {break;}
+        printf("%s\n",d->d_name);
     }
-    close(fd);
 
+    closedir(dir);
     return 0;
 }
