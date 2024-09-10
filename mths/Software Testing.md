@@ -46,4 +46,9 @@
 - aka functional testing
 - tests workflows to see if everything is functioning as intended
 	- inputs correctly handled
-	- error messages prop
+	- error messages properly displayed
+	- redirected properly, etc
+- black-box testing 100%
+- a dedicated testing team separate from the devs perform these. 
+- sometimes "alpha" and "beta" tests are done for this
+- this is where a lot of paperwork will be generated
