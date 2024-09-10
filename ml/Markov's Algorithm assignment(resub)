@@ -1,0 +1,9 @@
+A*Bx -> Ax*B
+A*x   -> Ax.
+Ax     -> x*A
+
+abcd
+d*abc
+dc*ab
+dcb*a
+dcba

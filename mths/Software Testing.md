@@ -1,0 +1,49 @@
+- series of tests you put your software through with the goal that the product is finished and working
+- typical verification
+	- meets requirements laid out by customer
+	- responds correctly to a series of inputs
+	- performs the correct function within reasonable time-frame
+	- actually usable from a user perspective
+	- runs in production environment
+- testing approaches:
+	- static
+	- dynamic
+	- passive
+	- exploratory
+- the "box" approach
+	- white-box and black-box testing
+- 3 main levels of testing:
+	- unit
+	- integration
+	- system
+## Box testing
+- white-box
+	- you have the knowledge of your code-base
+	- use this knowledge to create tests that could make it fail
+- black-box
+	- no knowledge of internal code
+	- no coding experience is needed for this
+## Unit Testing
+- testing the individual segments of code
+	- no interaction with other modules
+- unit tests are fine-grained
+	- input testing
+	- output testing
+	- crashes?
+	- are the outputs correct
+- uses white-box theories
+- often automated using testing packages*
+## Integration Testing
+- done after unit tests
+- focuses on dependencies between modules
+- broader level of test than unit tests
+	- i.e. when someone opens a menu, is the right query called
+- still somewhat fine-tuned
+- can be done by devs of independent testers
+- can be black-box or white-box
+## System testing
+- done after integration testing
+- aka functional testing
+- tests workflows to see if everything is functioning as intended
+	- inputs correctly handled
+	- error messages prop
