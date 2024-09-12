@@ -6,6 +6,17 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
+int checkErr(int val, const char *msg)
+{
+    if (val == -1)
+    {
+        perror(msg);
+        exit(EXIT_FAILURE);
+    }
+    return val;
+}
+
+
 int main()
 {
     int data,accl,angl,rota;
@@ -13,17 +24,16 @@ int main()
     double val;
     double bytes[9];
 
-    data = open("raw.dat",O_RDONLY);
-    accl = open("data.dat",O_WRONLY|O_CREAT|O_TRUNC,0766);
-    angl = open("data.dat",O_WRONLY|O_CREAT|O_TRUNC,0766);
-    rota = open("data.dat",O_WRONLY|O_CREAT|O_TRUNC,0766);
+    data = checkErr(open("data.dat",O_RDONLY),"failed, open data,dat");
+    accl = checkErr(open("accl.dat",O_WRONLY|O_CREAT|O_TRUNC,0766),"failed, open accl.dat");
+    angl = checkErr(open("angl.dat",O_WRONLY|O_CREAT|O_TRUNC,0766),"failed, open angl.dat");
+    rota = checkErr(open("rota.dat",O_WRONLY|O_CREAT|O_TRUNC,0766),"failed, open rota.dat");
 
-    while(read(data,bytes,9*sizeof(double)) > 0)
+    while(checkErr(read(data,bytes,9*sizeof(double)),"failed, read data.dat") > 0)
     {
-        for(int i=0; i<10;i++) 
-        {
-            printf("%i",i);
-        }
+        write(accl,&bytes[0],3*sizeof(double));
+        write(angl,&bytes[3],3*sizeof(double));
+        write(rota,&bytes[6],3*sizeof(double));        
     }
     close(data);
     close(accl);
