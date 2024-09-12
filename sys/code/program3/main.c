@@ -25,9 +25,10 @@ int main()
     double bytes[9];
 
     data = checkErr(open("data.dat",O_RDONLY),"failed, open data,dat");
-    accl = checkErr(open("accl.dat",O_WRONLY|O_CREAT|O_TRUNC,0766),"failed, open accl.dat");
-    angl = checkErr(open("angl.dat",O_WRONLY|O_CREAT|O_TRUNC,0766),"failed, open angl.dat");
-    rota = checkErr(open("rota.dat",O_WRONLY|O_CREAT|O_TRUNC,0766),"failed, open rota.dat");
+    mkdir("values", 0777);    
+    accl = checkErr(open("values/accl.dat",O_WRONLY|O_CREAT|O_TRUNC,0766),"failed, open accl.dat");
+    angl = checkErr(open("values/angl.dat",O_WRONLY|O_CREAT|O_TRUNC,0766),"failed, open angl.dat");
+    rota = checkErr(open("values/rota.dat",O_WRONLY|O_CREAT|O_TRUNC,0766),"failed, open rota.dat");
 
     while(checkErr(read(data,bytes,9*sizeof(double)),"failed, read data.dat") > 0)
     {
