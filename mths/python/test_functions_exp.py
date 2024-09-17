@@ -32,7 +32,9 @@ def test_input(monkeypatch):
     ## if a single input statement, can just pass the string
     # monkeypatch.setattr('builtins.input', lambda _: next(GEN))
     TEST = (x for x in ["6","3"])
-    monkeypatch.setattr('builtins.input', lambda _: next(TEST))
+    # monkeypatch.setattr('builtins.input', lambda _: next(TEST))
+    monkeypatch.setattr('builtins.input', callable(["6","3"]))
+    
 
     assert inputTest() == 2.0
 
