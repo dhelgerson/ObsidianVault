@@ -13,7 +13,10 @@ def returnSum(a,b):
     return a+b
 
 def inputs():
-    a = input()
-    b = input()
+    a = int(input())
+    b = int(input())
 
     return a/b
+
+if __name__ == 'main':
+    print(inputs())

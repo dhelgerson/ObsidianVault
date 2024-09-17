@@ -13,5 +13,12 @@ def test_convert(item):
 def test_returnSum(x,y,z):
     assert returnSum(x,y) == z
 
+def geninputs():
+    for item in ["8","4"]:
+        yield item
+
+GEN = geninputs()
+
 def test_inputs(monkeypatch):
-    monkeypatch.setattr('builtins.input', lambda _: next(["2","1"]))
+    monkeypatch.setattr('builtins.input', lambda _: next(GEN))
+    assert inputs() == 2.0
