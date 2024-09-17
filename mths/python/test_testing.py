@@ -9,5 +9,9 @@ def test_doNothing(): assert doNothing() == None
 def test_convert(item):
     assert convert(item) == None
 
-def test_returnSum():
+@pytest.mark.parametrize("x,y,z",[(2,3,5),(1,2,3),(2,4,6),(1,7,8)])
+def test_returnSum(x,y,z):
     assert returnSum(x,y) == z
+
+def test_inputs(monkeypatch):
+    monkeypatch.setattr('builtins.input', lambda _: next(["2","1"]))

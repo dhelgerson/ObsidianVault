@@ -11,3 +11,9 @@ def convert(item):
     
 def returnSum(a,b):
     return a+b
+
+def inputs():
+    a = input()
+    b = input()
+
+    return a/b
