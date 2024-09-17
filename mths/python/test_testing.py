@@ -20,5 +20,9 @@ def geninputs():
 GEN = geninputs()
 
 def test_inputs(monkeypatch):
-    monkeypatch.setattr('builtins.input', lambda _: next(GEN))
+    monkeypatch.setattr('builtins.input', lambda _: next(x for x in ["8","4"]))
     assert inputs() == 2.0
+
+if __name__ == "__main__":
+    print(type(GEN)," ",GEN)
+    print(next(x for x in ["1","2"]))
