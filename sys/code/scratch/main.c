@@ -5,6 +5,8 @@
 #include <signal.h>
 #include <errno.h>
 #include <dirent.h>
+#include <signal.h>
+#include <sys/types.h>
 
 int checkerr(int val, const char *msg)
 {
@@ -16,25 +18,46 @@ int checkerr(int val, const char *msg)
     return val;
 }
 
+void sigHndl(int sig)
+{
+    if (sig == SIGUSR1)
+    {
+        const char *msg = "Handling SIGUSR1\n";
+        write(STDOUT_FILENO, msg,strlen(msg));
+    }
+}
+
 int main()
 {
-    DIR *dir;
-    struct dirent *d;
-
-    dir = opendir(".");
-    if (dir == NULL)
-    {
-        perror("opendir failed :(");
-        exit(EXIT_FAILURE);
-    }
+    struct sigaction sa;
+    sa.sa_handler = sigHndl;
+    sa.sa_flags = 0;
+    sigemptyset(&sa.sa_mask);
     
-    while (1)
+
+    pid_t pid;
+
+    pid = getpid();
+
+    pid_t cpid = checkerr(fork(),"fork");
+
+    if (cpid == 0)
     {
-        d = readdir(dir);
-        if (d == NULL) {break;}
-        printf("%s\n",d->d_name);
+        sigaction(SIGUSR1,&sa,NULL);
+        printf("Child: parent has pid of %d\n",pid);
+        printf("Child: Pausing\n");
+        pause();
+        printf("Child: Stopping\n");
+    }
+    else
+    {
+        printf("parent: process id is %d\n",pid);
+        printf("parent: child pid is %d\n",cpid);
+        sleep(1);
+        kill(cpid,SIGUSR1);
     }
 
-    closedir(dir);
+    printf("both run this\n");
+
     return 0;
 }
