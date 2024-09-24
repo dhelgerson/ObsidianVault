@@ -13,7 +13,6 @@ ranging from -1 <-> 1 maps Definitely not <-> Definitely
 | almost certainly     |0.8         |
 | definitely           | 1          |
 ## certainty theory
-see slides for equation
-function factors the believe of something to be true vs the measure of increased believe due to evidence
-
+- see slides for equation
+- function factors the believe of something to be true vs the measure of increased believe due to evidence
 
