@@ -33,7 +33,7 @@ char *readline(int fd)
     {
         // printf("%c",chr); // debugging
         if (chr == '\n') { break; }
-        if (errno == EINTR) { break; }
+        if (errno == EINTR) { errno = 0; break; }
         // if (chr == '�') { break; }
         size = strlen(output);
         tmp = (char*)malloc(size+2);
@@ -61,10 +61,10 @@ void sigHndl(int sig)
     }
     if (sig == SIGINT)
     {
-        const char *msg = "are you sure you want to quit? (y/N)\n";
-        write(STDOUT_FILENO,msg,sizeof(msg));
+        const char *msg = "\nare you sure you want to quit? (y/N)\n";
+        write(STDOUT_FILENO,msg,strlen(msg));
         char *ans = readline(STDIN_FILENO);
-        if (ans == "y") { exit(EXIT_SUCCESS); }
+        if (ans[0] == 'y') { exit(EXIT_SUCCESS); }
     }
 }
 
@@ -76,6 +76,7 @@ int main()
     sa.sa_flags = 0;
     sigemptyset(&sa.sa_mask);
     sigaction(SIGALRM,&sa,NULL);
+    sigaction(SIGINT,&sa,NULL);
 
     // open files
     int questions = checkErr(open("quest.txt",O_RDONLY),"opening questions");
@@ -92,26 +93,25 @@ int main()
     answer = (char*)malloc(20);
     read(STDIN_FILENO,answer,1);
     // printf("-%s-",answer);
-    if (answer[0] == 'n') { perror("exiting, coward"); exit(EXIT_FAILURE); }
+    if (answer[0] == 'n') { printf("exiting, coward"); exit(EXIT_FAILURE); }
     free(answer);
 
     printf("beginning:\n");
     
     //timer setup
-    struct itimerval it_val = {0,0,5,0}; // interval(s), interval(us),value(s),values(us)
+    struct itimerval it_val = {0,0,15,0}; // interval(s), interval(us),value(s),values(us)
     checkErr(setitimer(ITIMER_REAL,&it_val, NULL),"failed to set timer");
 
     //main quiz loop:
     
     while(1) 
     {
+        // if (errno == EINTR) { printf("still broken\n"); } // debugging errno still being EINTR
         question = readline(questions);
         if (!question[0]) { break; }
         answer = readline(answers);
         printf("%s\n",question);
         response = readline(STDIN_FILENO);
-        printf("-%s-\n",response);
-        printf("%d\n",strcmp(answer,response));
 
         if (strcmp(answer,response) == 0) { pts++; }
         total++;
