@@ -34,7 +34,6 @@ char *readline(int fd)
         // printf("%c",chr); // debugging
         if (chr == '\n') { break; }
         if (errno == EINTR) { errno = 0; break; }
-        // if (chr == '�') { break; }
         size = strlen(output);
         tmp = (char*)malloc(size+2);
         tmp[size+1] = '\0';
