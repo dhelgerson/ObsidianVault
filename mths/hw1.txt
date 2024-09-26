@@ -1,0 +1,15 @@
+## things to store
+- users
+- employees
+- inventory
+- shopping card data
+
+the shopping cart is cleared upon checkout
+
+# Questions:
+- how many/what relations would be needed
+- what attributes wold each relation have? which would be primary keys
+- what foreign keys ould each relation have? what links do these create and why is it necessary
+- given most databases can only store one item per attribute, how would the shopping cart be handled to allow for users to have an undetermined amount of items in their cart?
+
+
