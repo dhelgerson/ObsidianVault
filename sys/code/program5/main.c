@@ -92,7 +92,7 @@ int main()
     answer = (char*)malloc(20);
     read(STDIN_FILENO,answer,1);
     // printf("-%s-",answer);
-    if (answer[0] == 'n') { printf("exiting, coward"); exit(EXIT_FAILURE); }
+    if (answer[0] == 'n') { char msg[] = "exiting, coward\n"; write(STDERR_FILENO,&msg,strlen(msg)); exit(EXIT_SUCCESS); }
     free(answer);
 
     printf("beginning:\n");
