@@ -1,0 +1,7 @@
+I would like to take a unique and constrained approach to solving one of the problems we discussed in class. My fascination with old hardware and code optimization drives me to explore solutions that push the limits of minimalistic computing. For this project, I plan to use a Raspberry Pi Zero, a single-board computer with limited computational resources. The Pi Zero I own has approximately 512MB of RAM and a single-core processor clocked at less than 1GHz. Despite its small footprint, it offers essential features such as USB connectivity, networking, and video output.
+
+My objective is to optimize the algorithms we’ve covered in class, such as backtracking and possibly hill climbing, to run efficiently on this highly constrained device. By doing so, I hope to deepen my understanding of algorithm optimization in resource-limited environments.
+
+If time permits, I may also explore scaling this application to utilize multiple Pi Zero devices in a cluster. Additionally, there is a possibility of experimenting with the school’s original Sun SparcStation cluster, displayed in the HPC2 department, if I manage to advance to the multi-device stage of the project.
+
+This approach will not only test my skills in code optimization and hardware management but also provide a unique perspective on algorithm efficiency and the challenges of working with legacy and minimal computing systems.
