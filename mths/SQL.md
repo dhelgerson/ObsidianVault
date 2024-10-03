@@ -50,4 +50,22 @@ to build an app, you need 3 things:
 	or
 	`SELECT * FROM Customer ORDER BY LastName, FirstName DESC`
 - you can order by columns not in the query
-- 
+## Inserting into a Table
+- done by keyword `INSERT`
+- Must have all the data being added upon query
+	`INSERT INTO Customer (all colums you're inserting into) VALUES (all the values you're inserting)`
+## Deleting from a table
+- Uses keyword `DELETE`
+- **NEEDS** a condition to delete only one record
+	- should be a unique condition, like primary key
+- can also delete 1 record
+	`DELETE FROM Customer WHERE CustomerID = '0001'`
+	`DELETE FROM Customer` **WILL DELETE ALL OF Customer**
+## Updating Data
+- done via `UPDATE` and `SET`
+- can update multiple columns
+	`UPDATE Customer SET FirstName='Dana', LastName='Shows' WHERE CustomerID='0001'`
+## Deleting tables
+- done w/ `DROP` keyword
+	`DROP TABLE Customer` deletes table
+	`TRUNCNATE TABLE Customer` deletes all rows in table
