@@ -4,7 +4,7 @@ review lectures 2-4
 some of the questions will reflect the quiz. others are more in depth
 Look over inference engine cycle (starting w/ conflation)
 
-quiz serves to emphasize what WILL be on the exam. not verbatim
+quiz serves to emphasize what WILL be on the exam. questions not verbatim
 
 1 question will require a simple clips program to be written
 - not picky about syntax but has to look like clips
