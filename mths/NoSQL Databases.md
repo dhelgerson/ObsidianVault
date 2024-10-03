@@ -23,7 +23,7 @@ items are stored in 4 main categories:
 ### Wide-column store
 - also knows as extensible record store
 - uses tables, rows, and columns
-	- name an dformat of each column can vary from row to row
+	- name and format of each column can vary from row to row
 	- this is the opposite of relational databases
 - often interpreted as a 2-dimensional key-value store
 - also no benchmark for how you access data
