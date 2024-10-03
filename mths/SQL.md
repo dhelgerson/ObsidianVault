@@ -28,4 +28,26 @@ to build an app, you need 3 things:
 - specifies name, columns, column data types, primary/foreign keys, and null acceptance
 	- cannot have spaces in table name
 ### Viewing Data
-- ''
+- used w/ `SELECT` command
+- `SELECT * FROM Customer` to display everything in table
+### Filtering Data
+- `WHERE` keyword
+	`SELECT * FROM Customer WHERE CustomerID = "0001"`
+	`SELECT * FROM Customer WHERE CustomerID = "0001" AND LastName = "Starkey"`	
+- no difference between ' ' and " "
+- some datatypes require ' ' or " "
+### Wildcards
+- you can approximate through "%"
+	`SELECT * FROM Customer WHERE CustomerID LIKE "000%"`
+### Viewing Unique columns
+- you can select a specific column to return only unique values
+- done through `DISTINCT`
+	`SELECT DISTINCT CustomerID FROM Order`
+### Viewing Ordered Data
+- by default query is returned in order it exists in the database
+- using keyword `ORDER`
+	`SELECT * FROM Customer ORDER BY LastName, FirstName`
+	or
+	`SELECT * FROM Customer ORDER BY LastName, FirstName DESC`
+- you can order by columns not in the query
+- 
