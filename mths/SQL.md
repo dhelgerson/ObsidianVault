@@ -69,3 +69,18 @@ to build an app, you need 3 things:
 - done w/ `DROP` keyword
 	`DROP TABLE Customer` deletes table
 	`TRUNCNATE TABLE Customer` deletes all rows in table
+## Math in Queries
+### Viewing Min and Max
+- SQL allows you to return basic math items directly from a query
+- use in conjunction w/ `SELECT`
+	`SELECT MIN(Price) FROM Books`
+	`SELECT MAX(Quantity) FROM Books WHERE Author="George Orwell"`
+### Column Counts
+- done through built-in SQL `COUNT` function
+	`SELECT COUNT(ISBN) FROM Books`
+	`SELECT COUNT(Au`
+### Avg & Sum
+	`SELECT SUM(Quantity) FROM Books`
+	`SELECT AVG(Price FROM Books`
+## Viewing Specific Data Expanded
+- when using `WHERE` clause, you can use the `IN` keyword to compare column against multiple values
