@@ -102,3 +102,10 @@ to build an app, you need 3 things:
 | \[]    | represents any single character in the brackets | "c\[au]t" -- cut or cat                                               |
 | ^      | represents NOT                                  | "c\[^au]t" --  anything for any char in the bracket except cat or cut |
 | \-     | represents a range                              | "c\[a-t]t" -- any character between a and t in alphabetical order     |
+## Aliasing
+- helps interact w/ multiple tables
+	`SELECT * FROM Books AS b`
+	`SELECT b.Title, b.Author, c.ISBN FROM Books AS b, CART AS c`
+	`SELECT c.UserID, c.Quantity, b.Title, b.Author, b.Quantity FROM Books AS b, Cart AS c WHERE b.Author="George Orwell" AND b.ISBN=c.ISBN` - that's a deusy
+## Joins
+	`SELECT * FROM B`
