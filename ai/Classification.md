@@ -10,4 +10,12 @@ when the decision tree learning algorithm uses the information gain heuristic to
 this is an example of inductive bias because there is nothing in the training data that indicates smaller trees are better. 
 
 ## Key principle of machine learning
-given feature/target pairs
+given feature/target pairs $(X_1, y_1)$, ... ,$(X_n,y_n)$:
+if $X_i$ is similar to $X_j$, then $y_i$ is probably similar to $y_j$
+
+# Nearest neighbor classification
+Simple idea:
+- store all the training examples
+- classify new examples based on most similar training example
+	some math is involved in finding where they should be placed (different distance formulas)
+problem with this is you have to fine-tune how many nearest neighbors you consider.
