@@ -19,3 +19,8 @@ Simple idea:
 - classify new examples based on most similar training example
 	some math is involved in finding where they should be placed (different distance formulas)
 problem with this is you have to fine-tune how many nearest neighbors you consider.
+Disadvantes of k-nearest neighbor
+- sensitive to irrelevant features
+- doesn't produce an understandable model
+Inductive bias of k-nearest neighbor
+- assumes the classification of an instance x will be most similar to the classification of other instances that are nearby in Euclidean distance
