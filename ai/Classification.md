@@ -24,3 +24,8 @@ Disadvantes of k-nearest neighbor
 - doesn't produce an understandable model
 Inductive bias of k-nearest neighbor
 - assumes the classification of an instance x will be most similar to the classification of other instances that are nearby in Euclidean distance
+# Training and Test Data
+- To avoid overfitting, divide your set of labeled examples into a training set and a test set. often 80% for training and 20% for testing or a 90/10
+- train on training set only, and test on test set. never train on the test set.
+- this "holdout" method is to counteract the "overfitting" issue
+- more advanced methods will "cycle" which set of the dataset is withheld so that no amount of training data is left out but training is also prevented from "overfitting" 
