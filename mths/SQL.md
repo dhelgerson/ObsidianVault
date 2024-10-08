@@ -83,4 +83,22 @@ to build an app, you need 3 things:
 	`SELECT SUM(Quantity) FROM Books`
 	`SELECT AVG(Price FROM Books`
 ## Viewing Specific Data Expanded
+### IN
 - when using `WHERE` clause, you can use the `IN` keyword to compare column against multiple values
+	`SELECT * FROM Books WHERE author IN ("Charlotte Bronte", "Aldous Huxley")`
+- you can chain this w/ more select queries:
+	`SELECT * FROM Books WHERE ISBN IN (SELECT ISBN FROM Cart WHERE UserID="1000")`
+### BETWEEN
+- instead of using an AND statement, you can give a list using `BETWEEN`
+	`SELECT * FROM Books WHERE Price BETWTEEN 1 AND 50`
+		this is in comparison to a greater than `AND` a less than
+### Wildcards
+- basically SQL's version of REGEX
+
+| symbol | desc                                            | ex                                                                    |
+| ------ | ----------------------------------------------- | --------------------------------------------------------------------- |
+| %      | represents 0 or more char                       | "Hello% -- Hello World                                                |
+| \_     | represents a single unknown character           | "c_t" -- cat                                                          |
+| \[]    | represents any single character in the brackets | "c\[au]t" -- cut or cat                                               |
+| ^      | represents NOT                                  | "c\[^au]t" --  anything for any char in the bracket except cat or cut |
+| \-     | represents a range                              | "c\[a-t]t" -- any character between a and t in alphabetical order     |
