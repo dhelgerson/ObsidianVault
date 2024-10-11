@@ -108,4 +108,9 @@ to build an app, you need 3 things:
 	`SELECT b.Title, b.Author, c.ISBN FROM Books AS b, CART AS c`
 	`SELECT c.UserID, c.Quantity, b.Title, b.Author, b.Quantity FROM Books AS b, Cart AS c WHERE b.Author="George Orwell" AND b.ISBN=c.ISBN` - that's a deusy
 ## Joins
-	`SELECT * FROM B`
+- for showing data shared between tables
+	`SELECT * FROM Books INNER JOIN Cart ON Books.ISBN = Cart.ISBN` yields rows from both tables that have the same ISBN w/ columns from Books
+## Creating a Copy Table
+- copy data from a table to a new table
+- columns will retain the same settings provided. 
+	`CREATE TABLE Orwell AS SELECT ISBN, Title, Author FROM Books WHERE Author="George Orwell"`
