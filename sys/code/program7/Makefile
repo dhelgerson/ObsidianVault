@@ -1,4 +1,6 @@
-program_name = main
+program_name = program7
+
+MAKEFLAGS="-j 16"
 
 SRCS := $(wildcard *.c)
 HDRS := $(wildcard *.h)
@@ -18,4 +20,4 @@ list:
 	echo ${HDRS}
 
 clean:
-	rm -rf ${program_name} 
+	rm -rf ${program_name} *.o
