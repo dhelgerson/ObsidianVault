@@ -18,3 +18,5 @@ Plot and submit the 3 dimensional figures for it
  
 ## lecture notes
 using matlab fuzzy library
+## Video notes
+open fuzzy designer app -- type 1
