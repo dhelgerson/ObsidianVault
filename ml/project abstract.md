@@ -21,7 +21,7 @@ The goal of this project is to develop a neural network-based system for removin
 - **2.3 Training Process**
   - supervised learning was chosen for this project because both the input and desired output can be obtained
   - since the pairs are known, training is as simple as running the system on the input, evaluating the error, and adjusting the weights
- - ideally, 
+ - ideally, the model will be able to handle any reasonable volume saturation withing 16-bit audio. however, to start training, the samples will be normalized to hopefully allow a quicker error falloff.
 ## 3. Evaluation
 - **3.1 Performance Metrics**
   - Define the key metrics used to evaluate the system (e.g., signal-to-noise ratio (SNR) improvement, perceptual audio quality).
