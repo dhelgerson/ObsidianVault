@@ -10,20 +10,18 @@ The goal of this project is to develop a neural network-based system for removin
 
 ## 2. Methodology
 - **2.1 Data Collection**
-  - Describe the process of creating the dataset.
   - a dataset will be collected by creating professionally clean audio samples, mostly of human speech but some will also be of other desirable sounds to avoid over-fitting to the human voice.
-  - Explain the known sound source and the types of background noise used.
-  - Discuss how the recordings will be made in a known, consistent environment to ensure controlled conditions for training.
+  - Then, the known samples being played and the noisy environment will be recorded in the desired recording setup for the environment.
+  - This will create a dataset of noisy samples and their desired outcome, the original sound.
   
 - **2.2 Neural Network Architecture**
-  - Provide an overview of the neural network model (e.g., type of architecture, layers, etc.).
-  - Mention the choice of architecture (e.g., convolutional neural networks, recurrent neural networks) and why it is suitable for audio processing.
+  - since the goal of this system is to be transparently used in practice, the architecture of the neural network needs to be as simple as possible to improve runtime. to start with, 10% of my GPU or 20% of my CPU will be targeted. if desirable results aren't achieved, neural network complexity will be increased. 
+  - the specific neural network architecture hasn't been decided yet. to start, both convolutional  and recurrent neural networks will be tested.
 
 - **2.3 Training Process**
-  - Explain the concept of supervised learning in this context.
-  - Describe how pairs of noisy and clean audio samples will be used to train the network.
-  - Discuss any data augmentation techniques or preprocessing steps to improve the model’s generalization.
-
+  - supervised learning was chosen for this project because both the input and desired output can be obtained
+  - since the pairs are known, training is as simple as running the system on the input, evaluating the error, and adjusting the weights
+ - ideally, 
 ## 3. Evaluation
 - **3.1 Performance Metrics**
   - Define the key metrics used to evaluate the system (e.g., signal-to-noise ratio (SNR) improvement, perceptual audio quality).
