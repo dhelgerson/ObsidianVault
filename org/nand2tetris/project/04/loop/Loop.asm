@@ -17,22 +17,33 @@
 
 //   Store value in i to D register to use for later
 //   Store the difference of R0 and i (R0 - i)
-
+@R0
+D=M
+@i
+D=D-M
+@R1
+M=D
 //   CONDITIONAL STATEMENT
 //   if (R0 - i) <= 0 goto END
-
+D;JGT
 //   else (this stays in loop after the CONDITIONAL JUMP)
 //   Increment i
-
+@i
+M=M+1
+D=M
 //   goto LOOP (Restarts LOOP)
-
+@LOOP
+0;JMP
 // End LOOP 
 
 // Begin END 
 
 //  Store value of i in D register
 //  Store value in D register in R1
-
+@i
+D=M
+@R1
+M=D
 // End END
 
 // Put your code here.
