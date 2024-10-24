@@ -29,24 +29,6 @@ The goal of this project is to develop a neural network-based system for removin
   
 - **3.2 Testing Environment**
    - the system will be tested by processing new input. since the training data will be based on a specific environment, it's trivial for me to test it when needed. 
-## 4. Results and Analysis (Placeholder)
-- Summarize expected outcomes based on your approach.
-- Briefly discuss how you will interpret the results once you conduct experiments.
-- Mention any potential limitations you anticipate and how they might be addressed in future iterations.
-
-## 5. Applications
-- **5.1 Speech Processing**
-  - Discuss the relevance of this system for enhancing speech in live communication scenarios.
-  
-- **5.2 Audio Recording**
-  - Explain how this system can be beneficial for professional and consumer-level audio recordings.
-  
-- **5.3 Other Use Cases**
-  - Mention additional fields where precise noise reduction is critical (e.g., hearing aids, call centers).
-
-## 6. Conclusion
-- **Summary**: Recap the main points of the extended abstract.
-- **Future Work**: Highlight any future directions for improving or expanding the project.
-
-## 7. References
-- Provide a list of any relevant papers, articles, or resources you have referred to or plan to include in the extended abstract.
+## 4. Conclusion
+- **Summary**: we'll create a neural network to remove background noise from an audio stream. the training will be focused on a specific environment to improve precision
+- error will be calculated by measuring the loudness of the resulting audio samples after subtracting the desired sounds.
