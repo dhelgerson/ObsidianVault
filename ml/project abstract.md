@@ -24,13 +24,11 @@ The goal of this project is to develop a neural network-based system for removin
  - ideally, the model will be able to handle any reasonable volume saturation withing 16-bit audio. however, to start training, the samples will be normalized to hopefully allow a quicker error falloff.
 ## 3. Evaluation
 - **3.1 Performance Metrics**
-  - Define the key metrics used to evaluate the system (e.g., signal-to-noise ratio (SNR) improvement, perceptual audio quality).
-  - Explain how these metrics effectively measure the noise reduction capabilities of the model.
+  - defining our error will be quite simple. there are pre-existing tools for evaluating perceived loudness of an audio signal. what we will do is subtract the desired signal from the recorded, noisy signal, and use those tools to evaluate the loudness of the remaining signal.
+  - this method should effectively evaluate the loudness of the noise that we don't want. ideally, this loudness should be as low as possible.
   
 - **3.2 Testing Environment**
-  - Describe how the system will be tested to ensure it performs reliably in different scenarios.
-  - Include details on how well the model generalizes to unseen noise types or varied conditions within the known environment.
-
+   - the system will be tested by processing new input. since the training data will be based on a specific environment, it's trivial for me to test it when needed. 
 ## 4. Results and Analysis (Placeholder)
 - Summarize expected outcomes based on your approach.
 - Briefly discuss how you will interpret the results once you conduct experiments.
