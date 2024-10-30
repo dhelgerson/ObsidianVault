@@ -10,3 +10,28 @@
 // R0 >= 0, R1 >= 0, and R0*R1 < 32768.
 
 // Put your code here.
+@counter
+M=0
+@R2
+M=0
+
+
+// add r0 to r2, r1 times
+
+(For)
+@R1
+D=M
+@counter
+D=D-M
+@Done
+D;JLE
+@R0
+D=M
+@R2
+M=M+D
+@counter
+M=M+1
+@For
+0;JMP
+
+(Done)
