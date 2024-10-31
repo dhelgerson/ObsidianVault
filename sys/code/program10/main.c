@@ -40,6 +40,7 @@ int main()
     const int BSIZE = 100;
     char buf[BSIZE];
     ssize_t nbytes;
+    int ints[2];
     int status;
     pid_t cpid;
     char *msg = (char*)malloc(1000);
