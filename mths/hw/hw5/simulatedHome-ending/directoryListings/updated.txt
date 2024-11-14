@@ -1,8 +1,0 @@
-total 32
-drwxr-xr-x 1 kortni kortni   122 Nov 14 09:23 directoryListings
-drwxr-xr-x 1 kortni kortni    24 Mar 30  2023 exampleDirectory
--rw-r--r-- 1 kortni kortni   106 Nov 14 09:19 examplePython.txt
--rw-r--r-- 1 kortni kortni   261 Mar 30  2023 helloWorld.cpp
--rwxr-xr-x 1 kortni kortni 16856 Nov 14 09:21 helloWorldExecutable
-drwxr-xr-x 1 kortni kortni   130 Nov 14 09:14 intermediateLab
--rw-r--r-- 1 kortni kortni   447 Oct 29  2022 list.txt

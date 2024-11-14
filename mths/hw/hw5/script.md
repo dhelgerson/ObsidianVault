@@ -24,3 +24,5 @@ Drew Helgerson, tah568 Thu Nov 14 11:54:40 AM CST 2024
 11. ```rm -rf exampleDirectory```
 
 12. ```python3 examplePython.py > examplePython.txt && rm examplePython.py```
+
+13. ```sed -i s/drew/kortni/g $(find -name "*.txt")``` # not needed, but cheeky

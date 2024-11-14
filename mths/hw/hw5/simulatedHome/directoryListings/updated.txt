@@ -1,8 +1,0 @@
-total 44
-drwxr-xr-x 2 drew drew  4096 Nov 14 11:39 directoryListings
-drwxr-xr-x 2 drew drew  4096 Nov 14 09:07 exampleDirectory
--rw-r--r-- 1 drew drew   131 Nov 14 09:05 examplePython.py
--rw-r--r-- 1 drew drew   261 Mar 30  2023 helloWorld.cpp
--rwxr-xr-x 1 drew drew 16856 Nov 14 11:36 helloWorldExecutable
-drwxr-xr-x 2 drew drew  4096 Nov 14 09:07 intermediateLab
--rw-r--r-- 1 drew drew   447 Oct 29  2022 list.txt

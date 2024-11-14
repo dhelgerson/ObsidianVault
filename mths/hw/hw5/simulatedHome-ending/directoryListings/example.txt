@@ -1,2 +1,0 @@
-total 4
--rw-r--r-- 1 kortni kortni 27 Mar 30  2023 testfile.txt
