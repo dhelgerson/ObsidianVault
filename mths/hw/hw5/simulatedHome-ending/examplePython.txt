@@ -1,0 +1,3 @@
+This is a sample Python file!
+
+Did you know that snails have 14,000 teeth on average. It's horrifying. :)
