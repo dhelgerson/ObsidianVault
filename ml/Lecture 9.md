@@ -22,13 +22,13 @@ steps for a genetic algorithm:
 5. prune
 6. create pair of offspring chromosomes
 7. place created offspring in new population
-8. Repeast Step 5. until size of new chromosome propulation becomes eual to size of initial pop.
-- GA represents an iterative process. each iteration is called a gen.. a typical number of generations for a simple GA can range from 50 to over 500. there's no way to know
-- because GAs use a stochastic search method, the fitness of a pop. may remain stable for a number of generations before a superior chromosome appears
-- common practice is to terminate a GA after a specified number of gen.s and then examine the best ind. in the pop. if no satisfactory solution is found, the GA is restarted.
+8. Repeat Step 5. until size of new chromosome population becomes equal to size of initial population
+- Genetic Algorithm represents an iterative process. each iteration is called a generation. a typical number of generations for a simple Genetic Algorithm can range from 50 to over 500. there's no way to know
+- because Genetic Algorithms use a stochastic search method, the fitness of a population may remain stable for a number of generations before a superior chromosome appears
+- common practice is to terminate a Genetic Algorithm after a specified number of generations and then examine the best individual in the population if no satisfactory solution is found, the Genetic Algorithm is restarted.
 ### $EX$:
 We want to find the max value for $(15x-x^2)$
 **Fitness function**: $f(x)=(15x-x^2)$
 - we encode a string of binary as an integer for the value of $x$
-- randomly assign ind. to fill pop. $N$
+- randomly assign individual to fill population $N$
 - Follow above steps
