@@ -26,9 +26,9 @@ steps for a genetic algorithm:
 - GA represents an iterative process. each iteration is called a gen.. a typical number of generations for a simple GA can range from 50 to over 500. there's no way to know
 - because GAs use a stochastic search method, the fitness of a pop. may remain stable for a number of generations before a superior chromosome appears
 - common practice is to terminate a GA after a specified number of gen.s and then examine the best ind. in the pop. if no satisfactory solution is found, the GA is restarted.
-### $EX:$
+### $EX$:
 We want to find the max value for $(15x-x^2)$
 **Fitness function**: $f(x)=(15x-x^2)$
 - we encode a string of binary as an integer for the value of $x$
 - randomly assign ind. to fill pop. $N$
-- 
+- Follow above steps
