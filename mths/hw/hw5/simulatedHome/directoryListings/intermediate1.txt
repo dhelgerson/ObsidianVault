@@ -1,0 +1,6 @@
+total 20
+-rw-r--r-- 1 drew drew  722 Sep 24  2021 animal.cpp
+-rw-r--r-- 1 drew drew  591 Sep 24  2021 animal.h
+-rw-r--r-- 1 drew drew   33 Sep 24  2021 animals.txt
+-rw-r--r-- 1 drew drew 3701 Sep 24  2021 main.cpp
+-rw-r--r-- 1 drew drew  172 Mar 30  2023 makefile
