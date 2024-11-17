@@ -4,8 +4,8 @@
 Clothes:
 - 2x black slacks
 - 1x khaki pants
-- 2x longsleeve button-ups
-- 2x shortsleeve button-ups
+- 1x longsleeve button-ups
+- 3x shortsleeve button-ups
 - gigadawgs t-shirt
 - 5x days of underwear/socsk
 - black belt
@@ -30,7 +30,6 @@ Clothes:
 - Jeans
 - Shoes, comfortable for long walking, presentable (converse or tennis-shoes)
 - Club Jacket
-* Pillow???
 Other:
 - phone
 - wallet
