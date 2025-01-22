@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <pthread.h>
 #include <stdlib.h>
+#include <pthread.h>
 
-#define NUMTHREADS 16
+// #define NUMTHREADS 96
 
 int triangle(int n)
 {
@@ -46,7 +46,7 @@ void *run(void *input)
         {
             if (divisible(tri,divisor) == 1)
             {
-                divisors++;
+                divisors ++;
                 continue;
             }
         }
@@ -57,26 +57,32 @@ void *run(void *input)
             printf("%i: %i\n",tri,divisors);
         }
 
-        if (divisors > 500) break;
+        if (divisors > 500) exit(0);
 
         i += threads;
     }
+        return 0;
 }
 
-int main()
+int main(int argc, char *argv[])
 {
-    pthread_t threads[NUMTHREADS];
-    struct args *args[NUMTHREADS];
+        if (argc <= 1)
+        {
+                printf("incorrect num arguments");
+        }
+        int num_threads = atoi(argv[1]);
+    pthread_t threads[num_threads];
+    struct args *args[num_threads];
 
-    for (int i = 0; i < NUMTHREADS; i++)
+    for (int i = 0; i < num_threads; i++)
     {
         args[i] = (struct args *)malloc(sizeof(struct args));
         args[i]->thread = i + 1;
-        args[i]->threads = NUMTHREADS;
+        args[i]->threads = num_threads;
         pthread_create(&threads[i], NULL, run, (void *)args[i]);
     }
 
-    for (int i = 0; i < NUMTHREADS; i++)
+    for (int i = 0; i < num_threads; i++)
     {
     pthread_join(threads[i], NULL);
     free(args[i]);
@@ -84,3 +90,4 @@ int main()
 
     return 0;
 }
+
