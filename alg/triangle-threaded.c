@@ -68,7 +68,8 @@ int main(int argc, char *argv[])
 {
         if (argc <= 1)
         {
-                printf("incorrect num arguments");
+                printf("incorrect num arguments/n");
+				exit(1);
         }
         int num_threads = atoi(argv[1]);
     pthread_t threads[num_threads];
