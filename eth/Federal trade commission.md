@@ -4,11 +4,18 @@
 - Common law - a judicial opinion
 - Statutory law - laws regarding crimes
 ## Administrative law
-- U.s concgess
+- U.S concgess
 - Administrative procedure act
 - Federal agencies
 	- created by statute
 	- make rules
 	- enforce rules
 	- adjudicate
-	- alphabet soup.
+	- alphabet soup: EPA, FTC, USDA, FAA, NOAA
+## Federal Court System:
+- Based on precedence
+- Supreme
+	- Final say
+	- Precedent is "law"
+- Circuit
+	- Circuit split  - when different circuits disagree w/ rulings
