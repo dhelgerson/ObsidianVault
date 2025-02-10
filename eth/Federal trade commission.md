@@ -19,3 +19,8 @@
 	- Precedent is "law"
 - Circuit
 	- Circuit split  - when different circuits disagree w/ rulings
+## Federal Trade Commision
+- created by Federal Trade Commission (FTC) act of 1914
+- originally was empowered to prohibit unfair methods of competition
+- FTC act was amended in 1938 to make clear that it had the authority to prohibit unfair acts and practices that harmed consumers (not just competitors)
+- 
