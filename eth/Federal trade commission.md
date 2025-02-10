@@ -47,3 +47,12 @@ Incident 2 cont:
 Incident 3:
 - late 2009, hacked the admin account once again
 - Obtained card data on 69,000 customers from 28 hotels
+The Case:
+- FTC filed suit in US district court in AZ which was transferred to the district court
+- FTC alleged certain unfair and deceptive practices that resulted in $10.6m in fraudulent charges
+	- credit card data stored in plaintext
+	- easily guessed passwords
+- Wyndham filed a motion to dismiss
+- district ourt denied the motion
+- appelate court agreed to hear the case
+- 
