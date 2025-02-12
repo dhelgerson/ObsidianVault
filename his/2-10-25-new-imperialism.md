@@ -1,4 +1,4 @@
-# The New Imperialism
+# The New #Imperialism
 ## Causes:
 Economic:
 - Access to cheap raw materials
@@ -19,4 +19,4 @@ the Rough Riders defeat the spaniards in cuba
 - revolutionaries led by emilio aguinaldo confront the american troops
 - goes from conventional to guerrilla warfare
 1. when and how did the US become an emerial power
-2. which unique problems did imperialism raise for the american nation which solutions were found
+2. which unique problems did #imperialism raise for the american nation which solutions were found
