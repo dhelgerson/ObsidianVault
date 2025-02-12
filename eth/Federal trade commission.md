@@ -53,6 +53,8 @@ The Case:
 	- credit card data stored in plaintext
 	- easily guessed passwords
 - Wyndham filed a motion to dismiss
-- district ourt denied the motion
-- appelate court agreed to hear the case
+- district court denied the motion
+- Appellate court agreed to hear the case
+# LabMD vs. FTC
+Facts:
 - 
