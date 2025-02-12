@@ -30,7 +30,7 @@
 - Section 5 of the FTC act
 	- declares unfair methods of competition affectingcommerce unlawful
 	- revokes their right to declare a practice unlawful unless the act cause injury or harm to consumers
-### FTC v. Wyndham
+### FTC v. #Wyndham
 - Wyndham was a hospitality company that franchises hotels
 - licensed its brand name to 90 independent hotels
 - those properties uses a management software provided by windham
@@ -55,6 +55,27 @@ The Case:
 - Wyndham filed a motion to dismiss
 - district court denied the motion
 - Appellate court agreed to hear the case
-# LabMD vs. FTC
+# #LabMD vs. FTC
 Facts:
-- 
+- #LabMD is a medical diagnostic lab
+- they were no longer in business at the time of the appeals court case
+- maintained sensitive health information on consumers as necessary to carry out business
+- were subject to #HIPPA data security regulations
+- at some point around 2005, the business manger installed #LimeWire, a p2p #filesharing application on their computer.
+	- installing applications was against company policy
+- the business manager included the "my documents" folder in LimeWire's sharing
+- in '08 Tiversa holdings, a data security firm, accessed the patient-data file
+- they contacted LabMD to inform them of the file download and attempted to sell LabMD remediation services
+- LabMD refused the services of Tiversa and found the removed the P2P app.
+- tried numerous times to convince LabMD to purchase its services
+- around '09, tiversa contacted the FTC concerning the exposed data
+- the FTC started an investigation into LabMD's data-security practices and filed an administrative complaint in Aug '13
+- the FTC assigned an administrative law judge
+- in 2016, FTC gave its final order.
+	- they found that LabMD "failed to implement reasonable security measures to protect sensitive consumer info"
+	- the order directed LabMD to implement a cybersecurity program that met the FTC's standards
+	- LabMD petitioned the 11th circuit federal appeals court to stay the enforcement of the order and to hear the appeal.
+- 11th circuit appeals analysis
+	- issue 1: whether labmd's failure to implement and maintain a resonable designed data-security program constituted an unfair act
+		- the court refused to answer the question
+	- 
