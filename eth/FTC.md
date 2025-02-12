@@ -76,6 +76,15 @@ Facts:
 	- the order directed LabMD to implement a cybersecurity program that met the FTC's standards
 	- LabMD petitioned the 11th circuit federal appeals court to stay the enforcement of the order and to hear the appeal.
 - 11th circuit appeals analysis
-	- issue 1: whether labmd's failure to implement and maintain a resonable designed data-security program constituted an unfair act
+	- Issue 1: whether labmd's failure to implement and maintain a resonable designed data-security program constituted an unfair act
 		- the court refused to answer the question
-	- 
+	- Issue 2: whether the commission's cease and desist order founded upon labmd was enforceable
+		- court says FTC's cease and desist lacked specificity
+		- FTC's order contained no inhibitions and only stated labmd should overhaul their data-security practices
+# Where are we now?
+- until the supreme court rules on the matter, we have 2 rulings in 2 separate appeals court districts
+- is this really a circuit split?
+- the FTC recently changed the substance of its orders concerning data security requirement in light of the 11th circuit ruling.
+# Apple vs. FBI
+- fbi retrieve apple iPhone from a domestic terrorist after a shooting.
+- fbi seeks an order from the court to force apple to decrypt the phone 
