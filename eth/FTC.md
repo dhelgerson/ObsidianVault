@@ -86,5 +86,6 @@ Facts:
 - is this really a circuit split?
 - the FTC recently changed the substance of its orders concerning data security requirement in light of the 11th circuit ruling.
 # Apple vs. FBI
-- fbi retrieve apple iPhone from a domestic terrorist after a shooting.
-- fbi seeks an order from the court to force apple to decrypt the phone 
+- FBI retrieve apple iPhone from a domestic terrorist after a shooting.
+- FBI seeks an order from the court to force apple to decrypt the phone for search.
+- Apple refused on the basis that it would betray its users trust in their security
