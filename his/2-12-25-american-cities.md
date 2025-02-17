@@ -40,7 +40,7 @@ Teddy Roosevelt:
 William Taft
 - 16th Amendment: federal income tax
 Woodrow Wilson
-
+- 
 ## #Immigrants
 - Ellis island
 - Short review was conducted to find out how they would fit in society
