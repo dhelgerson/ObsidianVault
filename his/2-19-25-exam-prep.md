@@ -8,3 +8,9 @@ Challenges
 - Lincoln's death/Johnson's assumption of power
 - Disenfranchisement
 Accomplishments
+- getting rid of slavery
+- poligamy
+# Nationalism
+# Imperialism
+# Industrialism
+# Social Reform
