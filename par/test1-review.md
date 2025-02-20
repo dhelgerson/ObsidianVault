@@ -22,3 +22,4 @@ van noiman arch
 - instructions and data in a shared memory
 pipe-lining
 - taking jobs and spreading them across hardware
+caches
