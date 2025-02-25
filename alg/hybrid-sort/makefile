@@ -2,17 +2,19 @@
 # Compile all .c files into "executible" w/ cflags #
 ####################################################
 
-# name of executible:
-executible = hybrid-sort
+all: hybrid-sort merge-sort instertion-sort
 
-# get objects needed
-objects = $(patsubst %.c, %.o, $(wildcard *.c))
+merge-sort: merge-sort.o libmerge.o libcommon.o
+	gcc $(CFLAGS) $(LDFLAGS) $^ -o $@
 
-$(executible): $(objects)
+insertion-sort: insertion-sort.o libsort.o libcommon.o
+	gcc $(CFLAGS) $(LDFLAGS) $^ -o $@
+
+hybrid-sort: hybrid-sort.o libmerge.o libsort.o libcommon.o
 	gcc $(CFLAGS) $(LDFLAGS) $^ -o $@
 
 %.o: %.c
 	gcc $(CFLAGS) $^ -c
 
 clean: 
-	rm -r *.o hybrid-sort
+	rm -r *.o merge-sort insertion-sort hybrid-sort &> /dev/null; true
