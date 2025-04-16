@@ -3,7 +3,7 @@
 #include <time.h>
 
 #define BIL 1000000000L
-#define LUT_SIZE 199
+#define LUT_SIZE 10000
 
 unsigned long long lut[LUT_SIZE][LUT_SIZE];
 
