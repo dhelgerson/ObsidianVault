@@ -3,12 +3,19 @@
 #include <time.h>
 
 #define BIL 1000000000L
-#define LUT_SIZE 10000
+#define LUT_SIZE 100
 
 unsigned long long lut[LUT_SIZE][LUT_SIZE];
 
 // Recrusive funciton
 unsigned long long C(unsigned long long n, unsigned long long k)
+{
+	if (k == 0 || k == n) { return 1; }
+	return C(n-1, k) + C(n-1,k-1);
+}
+
+// Non-recrusive funciton
+unsigned long long C_memo(unsigned long long n, unsigned long long k)
 {
 	if (k == 0 || k == n) { return 1; }
 	if (lut[n][k]) { 
@@ -27,10 +34,26 @@ int main(int argc, char **argv)
 	if (k > n)
 	{ printf("Cannot choose more than available\n");
 		exit(2); }
-  //printf("Method,N,K,Solution,time(ns)\n");
+	//printf("Method,N,K,Solution,time(ns)\n");
 
-  // Variables used by both
-  struct timespec start, stop;
+	// Variables used by both
+	struct timespec start, stop;
+
+	// Begin Recursive approach -------------------------------------------------------------
+	// Nuke the lut
+	for (int i = 0; i < LUT_SIZE; ++i){
+		for (int j = 0; j < LUT_SIZE; ++j){
+			lut[i][j] = 0; } }
+
+	// start timer
+	clock_gettime(CLOCK_MONOTONIC, &start);
+	// Do calculations:
+	unsigned long long answer = C(n,k);
+	// stop timer
+	clock_gettime(CLOCK_MONOTONIC, &stop);
+
+	// print results
+	printf("Naive,%d,%d,%llu,%llu\n",n,k,answer,BIL * (stop.tv_sec - start.tv_sec) + stop.tv_nsec - start.tv_nsec);
 
 	// Begin memoization approach -------------------------------------------------------------
 	// Nuke the lut
@@ -39,11 +62,11 @@ int main(int argc, char **argv)
 			lut[i][j] = 0; } }
 
 	// start timer
-  clock_gettime(CLOCK_MONOTONIC, &start);
+	clock_gettime(CLOCK_MONOTONIC, &start);
 	// Do calculations:
-	unsigned long long answer = C(n,k);
+	answer = C_memo(n,k);
 	// stop timer
-  clock_gettime(CLOCK_MONOTONIC, &stop);
+	clock_gettime(CLOCK_MONOTONIC, &stop);
 
 	// print results
 	printf("Memoization,%d,%d,%llu,%llu\n",n,k,answer,BIL * (stop.tv_sec - start.tv_sec) + stop.tv_nsec - start.tv_nsec);
@@ -55,20 +78,20 @@ int main(int argc, char **argv)
 			lut[i][j] = 0; } }
 
 	// start timer
-  clock_gettime(CLOCK_MONOTONIC, &start);
+	clock_gettime(CLOCK_MONOTONIC, &start);
 
-  // set the correct identities:
-  for (int i = 0; i <= n; ++i){
-    lut[i][0] = 1;
-    lut[i][i] = 1; }
+	// set the correct identities:
+	for (int i = 0; i <= n; ++i){
+    	lut[i][0] = 1;
+    	lut[i][i] = 1; }
 
-  // build the rest
+	// build the rest
 	for (int i = 1; i <= n; ++i){
 		for (int j = 1; j <= k; ++j){
-      lut[i][j] = lut[i-1][j] + lut[i-1][j-1]; } } 
+    	lut[i][j] = lut[i-1][j] + lut[i-1][j-1]; } } 
 
 	// stop timer
-  clock_gettime(CLOCK_MONOTONIC, &stop);
+	clock_gettime(CLOCK_MONOTONIC, &stop);
 	
 	// print results
 	printf("Bottom-up,%d,%d,%llu,%llu\n",n,k,lut[n][k],BIL * (stop.tv_sec - start.tv_sec) + stop.tv_nsec - start.tv_nsec);
