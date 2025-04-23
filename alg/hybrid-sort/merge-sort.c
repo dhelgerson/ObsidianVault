@@ -3,8 +3,8 @@
 #include <sys/types.h>
 #include <time.h>
 
-#include "libmerge.h"
 #include "libcommon.h"
+#include "libmerge.h"
 
 #define BILLION 1000000000L
 

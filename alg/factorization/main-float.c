@@ -56,7 +56,8 @@ int main(int argc, char **argv)
 	clock_gettime(CLOCK_MONOTONIC_RAW, &stop);
 
 	//printfactors(fac,n);
-	printf("C(%d,%d): %.0Lf in %lluns\n",n,k,ans,(stop.tv_sec - start.tv_sec)*1000000000 + stop.tv_nsec - start.tv_nsec);	
+	printf("naive-factorization,%d,%d,%.0Lf,%llu\n",n,k,ans,(stop.tv_sec - start.tv_sec)*1000000000 + stop.tv_nsec - start.tv_nsec);	
+	// printf("C(%d,%d): %.0Lf in %lluns\n",n,k,ans,(stop.tv_sec - start.tv_sec)*1000000000 + stop.tv_nsec - start.tv_nsec);	
 
 
 	return 0;

@@ -3,23 +3,6 @@
 #include <time.h>
 #include <math.h>
 
-void printfactors(short fac[],int size) {
-	for (int i = 2; i <= size; ++i) {
-		if (fac[i]) { printf("%d %llu\n",i,fac[i]); } } }
-
-void factorize(short array[], short n, short dir) {
-	while (n%2 == 0) {
-		array[2] += dir;
-		n /= 2; }
-
-	for (int i = 3; i*i <= n; i += 2) {
-		while (n%i == 0) {
-			array[i] += dir;
-			n /= i; } }
-
-	if (n > 2) { 
-		array[n] += dir; } }
-
 int main(int argc, char **argv)
 {
 	if (argc < 2) { printf("Usage: ./nchoosek N K\n"); exit(1); }
@@ -31,32 +14,28 @@ int main(int argc, char **argv)
 
 	struct timespec start,stop;
 
-	short fac[n+1];
-	for (int i = 2; i <= n; ++i) { fac[i] = 0; } // zeroing loop
+	if (k > n-k) { x = n-k; } // flip k and n-k for k is bigger than 1/2n
+
+	long double lut[n+1][x+1];
+	for (int i = 0; i <= n; ++i) { 
+		for (int j = 0; j <= k; ++j) {
+			lut[i][j] = 0; } } // zeroing loop
+
+	for (int i = 0; i <= n; ++i) {
+		for (int j = 0; j <= k; ++j) {
+			if (j == 0 || j == i) {
+				lut[i][j] = 1; } } }
 
 	clock_gettime(CLOCK_MONOTONIC_RAW, &start);
-	if (k > n-k) { x = n-k; } // flip k and n-k for k is bigger than 1/2n
-	for (int i = n-x+1; i <= n; ++i) { factorize(fac,i,1); } // numerators
 
-	//printfactors(fac,n);
-
-	for (int i = 2; i <= x; ++i) { factorize(fac,i,-1); }
-
-	//printfactors(fac,n);
-
-	for (int i = 2; i <= n; ++i) {
-		if (fac[i] == 1) {
-			C *= i;
-			continue; } 
-		if (fac[i]) {
-			C *= pow(i,fac[i]); }
-	}
-
+	for (int i = 0; i <= n; ++i) {
+		for (int j = 0; j <= k; ++j) {
+			lut[i][j] = lut[i-1][k] + lut[i-1][k-1]; } }
 	
 	clock_gettime(CLOCK_MONOTONIC_RAW, &stop);
 
 	//printfactors(fac,n);
-	printf("C(%d,%d): %.0Lf in %lluns\n",n,k,C,(stop.tv_sec - start.tv_sec)*1000000000 + stop.tv_nsec - start.tv_nsec);	
+	printf("C(%d,%d): %.0Lf in %lluns\n",n,k,lut[n][k],(stop.tv_sec - start.tv_sec)*1000000000 + stop.tv_nsec - start.tv_nsec);	
 
 
 	return 0;

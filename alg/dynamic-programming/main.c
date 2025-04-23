@@ -11,18 +11,18 @@ unsigned long long lut[LUT_SIZE][LUT_SIZE];
 unsigned long long C(unsigned long long n, unsigned long long k)
 {
 	if (k == 0 || k == n) { return 1; }
-	return C(n-1, k) + C(n-1,k-1);
-}
-
-// Non-recrusive funciton
-unsigned long long C_memo(unsigned long long n, unsigned long long k)
-{
-	if (k == 0 || k == n) { return 1; }
 	if (lut[n][k]) { 
 		return lut[n][k];
 	}
 	lut[n][k] = C(n-1, k) + C(n-1,k-1);
 	return lut[n][k];
+}
+
+// Recrusive funciton
+unsigned long long C_naive(unsigned long long n, unsigned long long k)
+{
+	if (k == 0 || k == n) { return 1; }
+	return C_naive(n-1, k) + C_naive(n-1,k-1);
 }
 
 int main(int argc, char **argv)
@@ -39,16 +39,12 @@ int main(int argc, char **argv)
 	// Variables used by both
 	struct timespec start, stop;
 
-	// Begin Recursive approach -------------------------------------------------------------
-	// Nuke the lut
-	for (int i = 0; i < LUT_SIZE; ++i){
-		for (int j = 0; j < LUT_SIZE; ++j){
-			lut[i][j] = 0; } }
+	// Begin naive approach -------------------------------------------------------------
 
 	// start timer
 	clock_gettime(CLOCK_MONOTONIC, &start);
 	// Do calculations:
-	unsigned long long answer = C(n,k);
+	unsigned long long answer = C_naive(n,k);
 	// stop timer
 	clock_gettime(CLOCK_MONOTONIC, &stop);
 
@@ -64,7 +60,7 @@ int main(int argc, char **argv)
 	// start timer
 	clock_gettime(CLOCK_MONOTONIC, &start);
 	// Do calculations:
-	answer = C_memo(n,k);
+	answer = C(n,k);
 	// stop timer
 	clock_gettime(CLOCK_MONOTONIC, &stop);
 
