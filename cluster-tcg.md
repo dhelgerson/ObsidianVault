@@ -11,17 +11,17 @@
 - Networking
 ### Trainers: Support Staff/Students
 staff prevent issues, students buff performance. Staff remain throughout play, Trainers are required for cluster operations. each trainer has a perk that will aid in a specific operational circumstance (detailed later)
-- Vince (staff) - "There is no further escalation"
-	- make things happen "now"
-- Oliver (student) - Code optimization: jobs require 1 less turn to complete
-- Joey (staff) - prevent job failures
-- John (staff) - if administering a storage cluster, datacenter is immune to 1 power outage total
-- Huston (staff) - prevent hardware failures
+- Vince (staff) - reduce cluster standups and upgrades by 1 turn - "There is no further escalation"
+- Oliver (student) - Code optimization: jobs require 1 less turn to complete - "A scalable code is a slow code"
+- Joey (staff) - prevent job failures - "Fix your slurm allocation"
+- John (staff) - if administering a storage cluster, datacenter is immune to 1 power outage - "RAID is not a backup"
+- Huston (staff) - prevent hardware failures - "This wouldn't happen if we just remove electricity from rock"
 - Mike (staff) - increase reward of completed job by 1
-- Dawn (staff) - add 1 networking to total datacenter per active cluster
-- Drew - 
-- Tess -
-- Isha -
+- Dawn (staff) - add 1 networking to resource pool
+- Drew (student)  - negate 1 security breach - "We already found that one chief"
+- Tess (student) - protects against 1 ticket submission 
+- Isha (student) - Allow 2 research jobs to be performed by the same cluster. - "proper management is the key to efficiency"
+- Soyab (student) - decrease ML job runtime by 1 turn
 ### Jobs
 each job will have base runtime per cluster type. each additional rack in a cluster will decrease runtime by 1 turn.
 - ICON - 8cpu, 10gpu, 10tpu, +2
@@ -41,6 +41,7 @@ Issues always arise in cluster administration. trap cards are these issues. diff
 - data breach - Disable use of storage cluster, turning jobs over to bid
 - job failure - a single job restarts (roll a die if multiple clusters)
 - hardware failure - remove a rack from the cluster (decided upon die roll) and return it to your deck
+- Ticket Submission - job takes 1 more turn to complete
 ### Turn Flow:
 - Clusters take multiple Turns to "Stand Up"
 - Players compete to complete different "jobs" before other players, playing to cluster strengs and weaknesses
