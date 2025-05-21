@@ -16,10 +16,17 @@ staff prevent issues, students buff performance. Staff remain throughout play, T
 - Oliver (student) - Code optimization: jobs require 1 less turn to complete
 - Joey (staff) - prevent job failures
 - John (staff) - if administering a storage cluster, datacenter is immune to 1 power outage total
-### Weaknesses
+- Huston (staff) - prevent hardware failures
+- Mike (staff) - increase reward of completed job by 1
+- Dawn (staff) - add 1 networking to total datacenter per active cluster
+- Drew - 
+- Tess -
+- Isha -
+### Types
 - GPU - Massively parallel, weak for single-threaded
 - CPU - All-rounder (Basic type)
 - TPU - Not much support, Extremely good at it's battles
+- Storage - Allows a single job to be stored
 ### Commander Cards: Facilities
 each deck will have 1 commander. it gives perks and weaknesses. it also determines the amount of resources available based on the turn.
 - HPC$^2$ - less resources, but the tight-knit support staff offers some advantages
@@ -29,7 +36,7 @@ each deck will have 1 commander. it gives perks and weaknesses. it also determin
 Issues always arise in cluster administration. trap cards are these issues. different staff members can guard against certain issues
 - power outage - all jobs must be restarted
 - heat wave - all jobs require 2 more turn to complete
-- data breach - give resources to another player
+- data breach - Disable use of storage cluster, turnin
 - job failure - a single job restarts (roll a die if multiple clusters)
 - hardware failure - remove a rack from the cluster (decided upon die roll) and return it to your deck
 ### Turn Flow:
