@@ -14,6 +14,8 @@ staff prevent issues, students buff performance. Staff remain throughout play, T
 - Vince (staff) - "There is no further escalation"
 	- make things happen "now"
 - Oliver (student) - Code optimization: jobs require 1 less turn to complete
+- Joey (staff) - prevent job failures
+- John (staff) - if administering a storage cluster, datacenter is immune to 1 power outage total
 ### Weaknesses
 - GPU - Massively parallel, weak for single-threaded
 - CPU - All-rounder (Basic type)
@@ -24,7 +26,12 @@ each deck will have 1 commander. it gives perks and weaknesses. it also determin
 - New Datacenter - LOTS of space and power
 - ORNL - many resources, things take longer to stand up due to red tape, etc.
 ### Trap Cards:
-all 
+Issues always arise in cluster administration. trap cards are these issues. different staff members can guard against certain issues
+- power outage - all jobs must be restarted
+- heat wave - all jobs require 2 more turn to complete
+- data breach - give resources to another player
+- job failure - a single job restarts (roll a die if multiple clusters)
+- hardware failure - remove a rack from the cluster (decided upon die roll) and return it to your deck
 ### Turn Flow:
 - Clusters take multiple Turns to "Stand Up"
 - Players compete to complete different "jobs" before other players, playing to cluster strengs and weaknesses
