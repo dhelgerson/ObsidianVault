@@ -26,9 +26,16 @@ staff prevent issues, students buff performance. Staff remain throughout play, T
 each job will have base runtime per cluster type. each additional rack in a cluster will decrease runtime by 1 turn.
 - ICON - 8cpu, 10gpu, 10tpu, +2
 - NAMD - 8cpu, 4gpu, 10tpu, +2
-- ML - 10cpu, 4gpu, 2tpu, +2
+- Training - 16cpu, 6gpu, 3tpu, +3
+- Inferencing - 4cpu, 2gpu, 1tpu, +1
 - Quantum SIM - 12cpu, 8gpu, 16tpu, +3
 - Research - 4cpu, 4gpu, 4tpu, +1
+- JtR - 16cpu, 8gpu, 12tpu, +3
+- Cloud Serving - read details
+	- uses 1 cluster, storage, and 1 extra networking
+	- gain +1 for every turn job is run
+	- once stopped, job goes back out for bid
+	- only 1 cloud card per game
 ### Commander Cards: Facilities
 each deck will have 1 commander. it gives perks and weaknesses. it also determines the amount of resources available based on the turn.
 - HPC$^2$ - less resources, but the tight-knit support staff offers some advantages
