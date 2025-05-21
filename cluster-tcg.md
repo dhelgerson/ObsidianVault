@@ -10,15 +10,21 @@
 - Cooling
 - Networking
 ### Trainers: Support Staff/Students
-Staff are rare/shiny, students are below them. Trainers are required for cluster operations. each trainer has a perk that will aid in a specific operational circumstance (detailed later)
-- Vince - "There is no further escalation"
+staff prevent issues, students buff performance. Staff remain throughout play, Trainers are required for cluster operations. each trainer has a perk that will aid in a specific operational circumstance (detailed later)
+- Vince (staff) - "There is no further escalation"
 	- make things happen "now"
-- Oliver - 
+- Oliver (student) - Code optimization: jobs require 1 less turn to complete
 ### Weaknesses
 - GPU - Massively parallel, weak for single-threaded
 - CPU - All-rounder (Basic type)
 - TPU - Not much support, Extremely good at it's battles
+### Commander Cards: Facilities
+each deck will have 1 commander. it gives perks and weaknesses. it also determines the amount of resources available based on the turn.
+- HPC$^2$ - less resources, but the tight-knit support staff offers some advantages
+- New Datacenter - LOTS of space and power
+- ORNL - many resources, things take longer to stand up due to red tape, etc.
 ### Trap Cards:
+all 
 ### Turn Flow:
 - Clusters take multiple Turns to "Stand Up"
 - Players compete to complete different "jobs" before other players, playing to cluster strengs and weaknesses
