@@ -1,10 +1,10 @@
 # Models
 ## Pokemon
-### Types: Compute
-- CPU systems - standard/fighter
-- GPU systems - Tanks/heavyweight
-- TPU systems - specialized/flanker'ish
-- Storage Systems - support 
+### Types
+- GPU - Massively parallel, weak for single-threaded
+- CPU - All-rounder (Basic type)
+- TPU - Not much support, Extremely good at it's battles
+- Storage - Allows a single job to be stored, decreases a cluster's job runtime by 1 for each rack of storage
 ### Energy: Cluster Resources
 - Power 
 - Cooling
@@ -22,11 +22,13 @@ staff prevent issues, students buff performance. Staff remain throughout play, T
 - Drew - 
 - Tess -
 - Isha -
-### Types
-- GPU - Massively parallel, weak for single-threaded
-- CPU - All-rounder (Basic type)
-- TPU - Not much support, Extremely good at it's battles
-- Storage - Allows a single job to be stored
+### Jobs
+each job will have base runtime per cluster type. each additional rack in a cluster will decrease runtime by 1 turn.
+- ICON - 8cpu, 10gpu, 10tpu, +2
+- NAMD - 8cpu, 4gpu, 10tpu, +2
+- ML - 10cpu, 4gpu, 2tpu, +2
+- Quantum SIM - 12cpu, 8gpu, 16tpu, +3
+- Research - 4cpu, 4gpu, 4tpu, +1
 ### Commander Cards: Facilities
 each deck will have 1 commander. it gives perks and weaknesses. it also determines the amount of resources available based on the turn.
 - HPC$^2$ - less resources, but the tight-knit support staff offers some advantages
@@ -36,7 +38,7 @@ each deck will have 1 commander. it gives perks and weaknesses. it also determin
 Issues always arise in cluster administration. trap cards are these issues. different staff members can guard against certain issues
 - power outage - all jobs must be restarted
 - heat wave - all jobs require 2 more turn to complete
-- data breach - Disable use of storage cluster, turnin
+- data breach - Disable use of storage cluster, turning jobs over to bid
 - job failure - a single job restarts (roll a die if multiple clusters)
 - hardware failure - remove a rack from the cluster (decided upon die roll) and return it to your deck
 ### Turn Flow:
