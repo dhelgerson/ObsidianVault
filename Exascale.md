@@ -1,11 +1,10 @@
-# Models
-## Pokemon
 ### Types
-- GPU - Massively parallel, weak for single-threaded
+- GPU - Massively parallel, weak for single-threaded - 1 power and cooling per rack
 - CPU - All-rounder (Basic type)
 - TPU - Not much support, Extremely good at it's battles
 - Storage - Allows a single job to be stored, decreases a cluster's job runtime by 1 for each rack of storage
-### Energy: Cluster Resources
+### Facility Resources
+each facility has a fixed amount of resources, each cluster needs networking
 - Power 
 - Cooling
 - Networking
