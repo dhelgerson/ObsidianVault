@@ -19,5 +19,8 @@
 - 8:00 - Arrive
 - 8:30 - Get Dressed
 - 10:00 - Pre-Ceremony photos
+	- Food is prepared
 - 11:00 - Ceremony Starts
+- 11:30 - Post-Ceremony photos
+- 12:00 - Food served
 - 
