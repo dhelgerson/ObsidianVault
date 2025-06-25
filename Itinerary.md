@@ -23,4 +23,9 @@
 - 11:00 - Ceremony Starts
 - 11:30 - Post-Ceremony photos
 - 12:00 - Food served
-- 
+- 12:30 - 3 traditional dances
+	- Bridal party puts cakes out
+- 1:00 - Cake Cutting
+- 1:30 - Couple eats, chill, converse
+- 2:30 - Initiate the end of event, start cleaning, etc.
+- 3:00 - make sure everything's squared away and leave
