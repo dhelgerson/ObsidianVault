@@ -23,4 +23,16 @@ ensure interoperability
 Edge:
 - hosts: clients and servers
 - servers in datacenters
-- 
+Access Network:
+- wired, wireless comms link
+Network Core:
+- interconnected routers
+- network of networks
+## Access Networks and phy. media
+#Q How to connect end systems to edge router: residential nets
+Fibre to the node vs fibre to the home:
+- difference between running fibre to a node per neighborhood, multiple houses getting fibre, vs running fibre straight to each home.
+Routing vs switching: perspective
+- routing is looking at it all at once
+- switching is what's going on at a specific place
+#Q packet vs circuit switching
