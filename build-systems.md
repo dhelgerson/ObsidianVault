@@ -28,6 +28,9 @@
 - overly reliant on .cmake files
 - can also be augmented by pkgconfig
 - at the mercy of the dev to write a good/portable Cmakelist.txt
+## What about Make?
+- not a build system (exceptions exist)
+- simply expedites the running of compile lines
 ## Examples
 ### btop
 - easy example, mostly relies on bottom-most system libs
@@ -35,3 +38,9 @@
 - has a dependency, some optional
 ### HPL
 - builds against BLAS and MPI
+## Compiler flags
+- -O(0-3/fast)
+- -g
+- -funroll-loops
+### Example
+- John the Ripper
