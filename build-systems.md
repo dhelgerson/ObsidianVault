@@ -5,7 +5,7 @@
 3. assembly - assembly is turned into it's corresponding binary code
 4. linking - all required objects and symbols are brought together and an entry-point is made for the binary to be executable.
 
-![compilation](compilation.webp)
+![compilation](compilation.png)
 ## The Problem: Linking
 - everything is everywhere
 - in HPC, usually every package has it's own prefix.
