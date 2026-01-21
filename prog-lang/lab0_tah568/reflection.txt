@@ -1,0 +1,30 @@
+1. Describe one moment during this lab where you had to pause, rethink, or double-check something. What were you trying to do? What made you stop? How did you move forward?
+- answering this question. no really. no 2nd thoughs in this lab.
+
+2. Choose one speciﬁc command or line from your script or terminal session that felt non-obvious.  Copy the line exactly as it appears. Explain what role it plays in your workﬂow.
+- again, super confident w/ the terminal, nothing here.
+
+3. Include a short excerpt from something your program produced or something you inspected (for example: program output, redirected output, diff, or a permission listing). Paste the excerpt exactly as it appears. Explain what it tells you. Explain what you would check next if it looked wrong.
+- I guess we'll go w/ the diff.
+```
+Hello from abc123 in 4567!				      |	Hello from tah568 in 2026!
+This line will not change.					This line will not change.
+Your program should not have this line.			      <
+```
+- diff isn't much to wrap your head around, similar lines appear side-by-side, different lines are separated w/ a pipe, lines not in the other appear on their side w/ a carrot pointing to them. simple stuff.
+
+4. Brieﬂy describe the environment you worked in: OS or environment (Cygwin, WSL, macOS, Linux, etc.)
+```
+SHELL=/usr/bin/zsh
+HOSTNAME=havoc
+PWD=/home/tah568/class-notes/prog-lang/lab0_tah568
+XDG_SESSION_TYPE=x11
+HOME=/home/tah568/class-notes/prog-lang
+LANG=en_US.UTF-8
+XDG_CURRENT_DESKTOP=GNOME
+USER=tah568
+MAKEFLAGS=-j32
+NAME="Rocky Linux"
+VERSION="9.6 (Blue Onyx)"
+ID="rocky"
+```
