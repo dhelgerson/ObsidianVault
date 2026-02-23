@@ -77,9 +77,19 @@ unique_ptr<AdjectivePhrase> parse_adjective_phrase()
 {
     // TODO (Lab 2): implement
     // - read ARTICLE or POSSESSIVE into ap->determiner
+    auto ap = make_unique<AdjectivePhrase>() ;
+    if ( peek() == ARTICLE ) {
+      expect(ARTICLE, "Article before adjective") ;
+      ap->article = peekLex ;
+    } else if ( peek() == POSSESSIVE ) {
+      expect(POSSESSIVE, "Posessive before adjective") ;
+      ap->possessive = peekLex ;
+    }
     // - read ADJECTIVE into ap->adjective
+    expect(ADJECTIVE, "Adjective after article|posessive") ;
+    ap->adjective = peekLex ;
     // - return the node
-    throw runtime_error("TODO: parse_adjective_phrase()");
+    return ap ;
 }
 
 
@@ -90,9 +100,14 @@ unique_ptr<NounPhrase> parse_noun_phrase()
 {
     // TODO (Lab 2): implement
     // - build noun phrase
+    auto np = make_unique<NounPhrase>() ;
     // - parse adjective phrase
+    np->adj = parse_adjective_phrase() ;
     // - expect NOUN
-    throw runtime_error("TODO: parse_noun_phrase()");
+    expect(NOUN, "Noun After <adjective phrase>") ;
+    np->noun = peekLex ;
+
+    return np ;
 }
 
 
@@ -103,9 +118,20 @@ unique_ptr<NounPhrase> parse_noun_phrase()
 unique_ptr<VerbPhrase> parse_verb_phrase()
 {
     // TODO (Lab 2): implement
+    auto vp = make_unique<VerbPhrase>() ;
     // - consume 0+ ADVERB into vp->adverbs
-    // - then expect VERB into vp->verb
-    throw runtime_error("TODO: parse_verb_phrase()");
+    if ( peek() == ADVERB ) {
+      expect(ADVERB, "Adverb before <Verb Phrase>") ;
+      vp->adverb = peekLex ;
+      if ( peek() == ADVERB ) {
+        vp->verbPhrase = parse_verb_phrase() ;
+      } else {
+        expect(VERB, "<Verb Phrase> after adverb" ) ;
+        vp->verb = peekLex ;
+      }
+    }
+
+    return vp ;
 }
 
 
@@ -115,10 +141,15 @@ unique_ptr<VerbPhrase> parse_verb_phrase()
 unique_ptr<Sentence> parse_sentence()
 {
     // TODO (Lab 2): implement
+    auto s = make_unique<Sentence>() ;
     // - subject noun phrase
+    s->firstNounPhrase = parse_noun_phrase() ;
     // - verb phrase
+    s->verbPhrase = parse_verb_phrase() ;
     // - object noun phrase
-    throw runtime_error("TODO: parse_sentence()");
+    s->scndNoundPhrase = parse_noun_phrase() ;
+
+    return s ;
 }
 
 
@@ -131,6 +162,8 @@ unique_ptr<Sentence> parse()
     havePeek = false;
     peekTok = 0;
     peekLex.clear();
+
+    auto root = parse_sentence() ;
 
     // TODO (Lab 2): parse a sentence and ensure EOF after it
     if (peek() != EOF) {

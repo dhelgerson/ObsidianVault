@@ -12,7 +12,7 @@
 # =============================================================================
 
 CXX      := g++
-CXXFLAGS := -std=gnu++17 -Wall -Wextra -O2
+CXXFLAGS := -std=gnu++17 -Wall -Wextra -O2 -Wno-unused-parameter
 
 .PHONY: all clean
 all: parse
