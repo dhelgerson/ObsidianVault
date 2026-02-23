@@ -1,0 +1,20 @@
+1. Your Mental Model (25 pts)
+Before you started coding, how did you picture the structure of a sentence?
+- Well, since I was primed with the grammar lecture before I began coding. I'd say it was pretty inline w/ how it's expected here.
+How did that mental model change once you began implementing your AST?
+- Not much, the overarching model didn't change at all, it was still a tree, how I expected to implement it did change slightly reguarding how certain qualifiers are handled
+2. A Moment of Friction (25 pts)
+Describe one point where your initial approach did not work as expected.
+- I had to rewrite my VerbPhrase parser a few times to handle both the unlimited adverbs in a recursive way and catch invalid grammars.
+What specifically went wrong, and what change fixed it?
+- I'll skip the first write; the second went pretty well except it kept eating the verb. I finally realized that my clauses were too broad for the verb consumption and both the initial call and recursed call were consuming it, leaving a non-verb for the initial call
+3. Printing Strategy (25 pts)
+How does your program print the AST?
+- from top to bottom. as in the examples
+Did you use a polymorphic approach such as double dispatch, or a different strategy (for example, operator overloading or centralized printing)?
+- I'm not sure what you mean here. I made new node types for each type which have their own version of the print_tree funciton. these functions get called recursively down the tree which ends up being line by line.
+Explain how your chosen approach works and why you chose it.
+- I chose a recursive approach since it most always fits in with tree structures. since the definition of at tree dictates that considering only the current node and its children is also a tree, it's easy to think about things locally, and getting the right local rules will make the overall tree work well.
+4. Advice to the Next Student (25 pts)
+What is one thing you would warn the next student about before starting this lab, and why?
+- Don't procrastinate, attend lab. while the implementation of this lab is moderately easy, grasping the key concepts practically can be a hurdle.
