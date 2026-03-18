@@ -7,3 +7,5 @@ dataStruc/Challenges/04/Challenge04
 .DS_Store
 *.pdf
 *.zip
+*.o
+parse
