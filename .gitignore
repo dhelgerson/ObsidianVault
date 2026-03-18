@@ -9,3 +9,4 @@ dataStruc/Challenges/04/Challenge04
 *.zip
 *.o
 parse
+lex.*
