@@ -1,0 +1,24 @@
+1. When It Broke
+
+Tell me about the moment your lexer did something weird and you just sat there looking at it. What were you convinced was true about tokens right before that? What shifted once you figured it out?
+- I wouldn't say it changed my view. I was just having issues between peek() and peekTok. one of my login statements was looking at peekTok which ended up being outdated based on what I was supposed to be looking at.
+
+2. The Foundation Moment
+
+At what point did it hit you that tokens are not just syntax pieces but the foundation of the whole language? Show me where in your own code you realized that if this part is off, everything after it falls apart.
+- I knew this from the beginning, so I can't really give an example. I'd say that if the tokens were even slightly off in rules.l, issues were had.
+
+3. The “Easy” Rule That Wasn’t
+
+What token rule did you almost treat as easy but later realized carried more weight than you expected? What did that teach you about building the ground floor of a language?
+- it was mostly just the issue of statement being virtual. I got help from john and he told me that you don't store anything in statement. you just return the pointer for either of what it ends up being.
+
+4. Meaning Starts Here
+
+When you started thinking about what your language actually does, not just what it looks like, you had to make choices. What meaning decision in your interpret logic felt important to you? Why that one? How would a different decision change the personality of your language?
+- really haven't a good example of this. it was straightforward. the only real choice I had to make was whether I should strip the qutoes during parsing or during interpretation. I suppose you could also consider using a vector to store the compounds but I didn't have to change that. I rocked w/ it from the begingging.
+
+5. The Shift
+
+You are not just writing code here. You are defining a language. What changed in how you think about programming after doing this? I am not asking what you learned. I am asking what shifted in you.
+- again, nothing. seemed straightforward. it was also remarkably similar to lab2, a little easier, actually. (just less to implement)
